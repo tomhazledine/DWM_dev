@@ -1,0 +1,65 @@
+// 01. Colours
+// 02. Media Query Mixins
+// 03. Typography etc.
+
+// 01. Colours
+// "The New Defaults"
+$aqua:#7fdbff;
+$blue:#0074d9;
+$navy:#001f3f;
+$teal:#39cccc;
+$green:#2ecc40;
+$olive:#3d9970;
+$lime:#01ff70;
+$yellow:#ffdc00;
+$orange:#ff851b;
+$red:#ff4136;
+$fuchsia:#f012be;
+$purple:#b10dc9;
+$maroon:#85144b;
+$white:#fff;
+$silver:#ddd;
+$grey:#aaa;
+$black:#111;
+
+// 02. Media Query Mixins
+// Adjust px values for every project
+@mixin breakpoint($point) {
+  // "min-width" breakpoints (screens getting bigger)
+  @if $point    == upOne   { @media (min-width:960px) { @content;}}
+  @else if $point == upTwo   { @media (min-width:1200px)  { @content;}}
+  @else if $point == upThree   { @media (min-width:1400px) { @content;}}
+  // "max-width" breakpoints (screens getting smaller)
+  @else if $point == downOne   { @media (max-width:960px) { @content;}}
+  @else if $point == downTwo   { @media (max-width:750px)  { @content;}}
+  @else if $point == downThree { @media (max-width:400px)  { @content;}}
+}
+
+// 03. Typography etc.
+// Icon Font
+@font-face {
+  font-family: 'iconFont';
+  src:url('/assets/fonts/icons/icons.eot');
+  src:url('/assets/fonts/icons/icons.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/icons/icons.woff') format('woff'),
+    url('/assets/fonts/icons/icons.ttf') format('truetype'),
+    url('/assets/fonts/icons/icons.svg#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+// Fonts
+$display:sans-serif;
+$text:georgia,serif;
+$utility:Helvetica,Arial,sans-serif;
+$icons:'iconFont';
+$code:monospace;
+// Weights
+$book:400;
+$bold:700;
+// Sizes
+html{
+  font-size:100%;
+  // Adjust for every project
+  //@include breakpoint(upTwo){font-size:110%;}
+  //@include breakpoint(downTwo){font-size:90%;}
+}

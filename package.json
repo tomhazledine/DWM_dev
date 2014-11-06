@@ -1,0 +1,36 @@
+{
+  "name": "DWM_Dev",
+  "version": "0.0.1",
+  "description": "Testing typography and deployment solutions for the new Digital Web Media website.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "ls -l"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://daryllDWM@bitbucket.org/dwmsw/default-project.git"
+  },
+  "author": "@thomashazledine",
+  "license": "GPLv2",
+  "devDependencies": {
+    "autoprefixer-core": "^3.1.0",
+    "gulp": "^3.8.6",
+    "gulp-cache": "^0.2.0",
+    "gulp-concat": "^2.3.4",
+    "gulp-iconfont": "^0.1.1",
+    "gulp-iconfont-css": "0.0.9",
+    "gulp-imagemin": "^0.6.2",
+    "gulp-jshint": "^1.8.3",
+    "gulp-livereload": "^2.1.0",
+    "gulp-plumber": "^0.6.4",
+    "gulp-postcss": "^1.0.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-scss-lint": "^0.1.2",
+    "gulp-size": "^1.0.0",
+    "gulp-sourcemaps": "^1.1.5",
+    "gulp-uglify": "^0.3.1",
+    "gulp-util": "^3.0.0",
+    "tiny-lr": "0.0.9"
+  }
+}
