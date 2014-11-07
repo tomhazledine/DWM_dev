@@ -21,6 +21,7 @@ var plumber      = require('gulp-plumber');
 var sourcemaps   = require('gulp-sourcemaps');
 var postcss      = require('gulp-postcss');
 var server       = lr();
+var shell        = require('gulp-shell')
 
 // This will handle our errors
 var onError = function (err) {
@@ -39,6 +40,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.write('.'))
     .pipe(size({title: 'css'}))
     .pipe(gulp.dest('assets/css'))
+    //.pipe(test)
     .pipe(livereload(server));
 });
 
@@ -126,6 +128,8 @@ gulp.task('listen', function(next) {
     });
 });
 
+// Shell Script for Jekyll
+gulp.task('jekyll', shell.task('rm -rf _site/*; jekyll build'))
 
 // Watch Files For Changes
 gulp.task('watch', function() {
@@ -137,12 +141,12 @@ gulp.task('watch', function() {
     gulp.watch('uncompressed/images/**', ['images']);
     gulp.watch('uncompressed/fonts/**', ['fonts']);
     gulp.watch('uncompressed/icons/**', ['iconfont']);
+    gulp.watch(['*.html','*.php','assets/**'],['jekyll']);
 
-    gulp.watch(['*.html','*.php']).on('change', function(file) {
+    gulp.watch(['_site/**']).on('change', function(file) {
         livereload(server).changed(file.path);
     });
 });
 
 // Default Task
 gulp.task('default', ['watch']);
-//gulp.task('default');
