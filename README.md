@@ -21,6 +21,7 @@ To enable "post-commit" hook (to automatically copy "master" branch to "gh-pages
 Remember to run `chmod a+x .git/hooks/post-commit` to make the "post-commit" file executable.
 
 Add the following to "post-commit":
+
     #!/bin/sh
     git checkout gh-pages
     git rebase master
