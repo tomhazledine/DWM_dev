@@ -2,8 +2,10 @@
 layout: default
 ---
 
-<div class="home">
+<div class="contentWrapper">
 
   <h2>Hello World! This probably will still be working!!!</h2>
+  {% capture homeContent %}{% include homeContent.md %}{% endcapture %}
+  {{ homeContent | markdownify }}
 
 </div>
