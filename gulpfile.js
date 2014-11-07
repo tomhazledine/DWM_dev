@@ -26,6 +26,7 @@ var shell        = require('gulp-shell')
 // This will handle our errors
 var onError = function (err) {
   gutil.log(gutil.colors.red(err));
+  //this.emit('end');
 };
 
 // Compile Our Sass
@@ -122,6 +123,9 @@ gulp.task('fonts', function() {
 
 // Livereload
 gulp.task('listen', function(next) {
+    //return jekyll();
+    //shell.task('rm -rf _site/*; jekyll build');
+    //shell.task('printf "shell task works!"');
     server.listen(35728, function(err) {
         if (err) return console.log;
         next();
@@ -129,19 +133,22 @@ gulp.task('listen', function(next) {
 });
 
 // Shell Script for Jekyll
-gulp.task('jekyll', shell.task('rm -rf _site/*; jekyll build'))
+gulp.task('jekyll', shell.task('jekyll build'));
+//function jekyll(){
+//  shell.task('rm -rf _site/*; jekyll build');
+//}
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('uncompressed/js/jquery/*.js', ['scripts']);
-    gulp.watch('uncompressed/js/vendor/*.js', ['scripts']);
-    gulp.watch('uncompressed/js/custom/*.js', ['scripts']);
-    gulp.watch('uncompressed/js/static/*.js', ['staticjs']);
-    gulp.watch('uncompressed/scss/*.scss', ['sass']);
-    gulp.watch('uncompressed/images/**', ['images']);
-    gulp.watch('uncompressed/fonts/**', ['fonts']);
-    gulp.watch('uncompressed/icons/**', ['iconfont']);
-    gulp.watch(['*.html'],['jekyll']);
+    gulp.watch('uncompressed/js/jquery/*.js', ['scripts', 'jekyll']);
+    gulp.watch('uncompressed/js/vendor/*.js', ['scripts', 'jekyll']);
+    gulp.watch('uncompressed/js/custom/*.js', ['scripts', 'jekyll']);
+    gulp.watch('uncompressed/js/static/*.js', ['staticjs', 'jekyll']);
+    gulp.watch('uncompressed/scss/*.scss', ['sass', 'jekyll']);
+    gulp.watch('uncompressed/images/**', ['images', 'jekyll']);
+    gulp.watch('uncompressed/fonts/**', ['fonts', 'jekyll']);
+    gulp.watch('uncompressed/icons/**', ['iconfont', 'jekyll']);
+    gulp.watch('*.html',['jekyll']);
 
     gulp.watch(['_site/**']).on('change', function(file) {
         livereload(server).changed(file.path);
