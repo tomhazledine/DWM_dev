@@ -22,6 +22,9 @@ $silver:#ddd;
 $grey:#aaa;
 $black:#111;
 
+// Site Specific Colours
+$cream:#efefef;
+
 // 02. Media Query Mixins
 // Adjust px values for every project
 @mixin breakpoint($point) {
