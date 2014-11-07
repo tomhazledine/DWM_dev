@@ -141,7 +141,7 @@ gulp.task('watch', function() {
     gulp.watch('uncompressed/images/**', ['images']);
     gulp.watch('uncompressed/fonts/**', ['fonts']);
     gulp.watch('uncompressed/icons/**', ['iconfont']);
-    gulp.watch(['*.html','*.php','assets/**'],['jekyll']);
+    gulp.watch(['*.html'],['jekyll']);
 
     gulp.watch(['_site/**']).on('change', function(file) {
         livereload(server).changed(file.path);
