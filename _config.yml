@@ -3,7 +3,7 @@ title: DWM Development Testing
 email: tom@digitalwebmedia.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   Testing typography and deployment solutions for the new Digital Web Media website.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/DWM_dev/" # the subpath of your site, e.g. /blog/
 url: "http://tomhazledine.github.io/DWM_dev/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  tomhazledine
