@@ -1,10 +1,62 @@
-// Import the global bits
-//@import 'normalize'; // Use a 'normalize' or...
-@import 'reset'; // ...a 'reset'. Comment out the one you don't want
-@import 'variables';
-@import 'utilities';
-@import 'mixins';
-@import 'placeholders';
+//------------------------------------//
 
-// Put stuff here that needs refactoring!
-@import 'shame';
+// Default Wordpress Starter Kit
+// * Master SASS file
+// * Architecture uses ITCSS methodology
+
+//------------------------------------//
+
+// CONTENTS
+
+// 01. Settings
+// * Colour variables
+// * Fonts
+// * Breakpoints
+
+// 02. Tools
+// * Clearfix Placeholder
+
+// 03. Generic
+// * Normalize [disabled]
+// * Reset
+
+// 04.Base
+// * Box-sizing
+// * Global font size
+
+// 05.Objects
+
+// 06.Components
+
+// 07.Trumps
+// * Hiding things visually
+// * Clearfix Class
+
+//------------------------------------//
+
+// 01. SETTINGS
+@import "settings.colours";
+@import "settings.fonts";
+@import "settings.breakpoints";
+
+// 02. TOOLS
+@import "tools.placeholders";
+@import "tools.mixins";
+
+// 03. GENERIC
+//@import 'generic.normalize';
+@import "generic.reset";
+
+// 04. BASE
+@import "base";
+
+// 05. OBJECTS
+
+// 06. COMPONENTS
+
+// 07. TRUMPS
+@import "trumps.utilities";
+
+
+// UH OH!
+@import "shame";
