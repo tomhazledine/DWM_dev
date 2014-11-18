@@ -1,5 +1,9 @@
 html{
-  background:$yellow;
+  background:$blue;
+  color:$cream;
+  font-family:$text;
+  line-height:1.6;
+  padding:1em;
 }
 
 .contentWrapper{
@@ -15,9 +19,50 @@ h4{font-size:1.4em;}
 h5,h6{font-size:1em;}
 h1,h2,h3,h4,h5,h5{
   padding-bottom:1em;
+  //font-weight:900;
+  font-style:italic;
 }
 
-li{padding-bottom:.5em;}
+a{
+  color:$cream;
+  text-decoration:none;
+  display:inline-block;
+  box-shadow:
+    inset $blue 0 1.2em 0,
+    inset $orange 0 1.4em 0;
+  //background:linear-gradient(
+  //  $blue 0%,
+  //  $blue 80%,
+  //  $orange 90%,
+  //  $orange 95%,
+  //  $blue 95%,
+  //  $blue 100%);
+  transition:color,box-shadow;
+  transition-duration:.2s;
+  &:hover{
+    color:$cream;
+    box-shadow:
+      inset $blue 0 .1em 0,
+      inset $orange 0 1.4em 0;
+    //background:linear-gradient(
+    //  $blue 0%,
+    //  $blue 1%,
+    //  $orange 1%,
+    //  $orange 95%,
+    //  $blue 95%,
+    //  $blue 100%);
+  }
+}
+
+li{
+  margin-bottom:.5em;
+  margin-left:-1.1em;
+  font-style:italic;
+  //font-weight:900;
+  list-style:none;
+  padding-left:.5em;
+  border-left:.6em solid $cream;
+}
 
 em{font-style:italic;}
-strong{font-weight:bold;}
+strong{font-weight:900;}
