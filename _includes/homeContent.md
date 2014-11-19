@@ -6,6 +6,14 @@ This is some regular body copy. Most of the text on the site will look like this
 
 Talking of which, here's a second paragraph. Isn't it lovely! This one will have a block of numbers: 0123456789. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, id, adipisci! Aliquam, consectetur, esse?
 
+## Links
+
+Links look [like this](/). They currently have a `hover` state and an `active` state (when they are clicked). We should also consider `visited` and `focus` states, too.
+
+<button>This is a button</button>
+
+Much like links, buttons have `hover` and `active` states. If anything, the `active` state is *more* important here, as users need a strong visual cue to show that they have successfully clicked the button.
+
 ### This is a third-level heading.
 
 Here's a regular paragraph followed by an unordered list. Duis aute irure dolor in reprehenderit in voluptate velit esse
