@@ -6,9 +6,11 @@ Testing typography and deployment solutions for the new Digital Web Media websit
 
 ## Install instructions
 
-Install Jekyll with `sudo gem install jekyll`.
+Install Jekyll with `sudo gem install jekyll` (on a Mac).
 
 Set up Gulp with `npm install`.
+
+*If you're re-installing after previously running `npm install`, remember to delete "node_modules/" directory before re-running.*
 
 Run `gulp` to do work.
 

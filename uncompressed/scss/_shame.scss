@@ -1,9 +1,16 @@
-html{background:$red;}
+html{
+  background:$blue;
+  color:$cream;
+  font-family:$text;
+  line-height:1.6;
+  padding:1em;
+}
 
 .contentWrapper{
   width:90%;
   max-width:40em;
   margin:0 auto;
+  padding:4em 0;
 }
 
 h1{font-size:3em;}
@@ -12,8 +19,66 @@ h3{font-size:1.6em;}
 h4{font-size:1.4em;}
 h5,h6{font-size:1em;}
 h1,h2,h3,h4,h5,h5{
+  padding-top:3em;
+  padding-top:3rem;
+  padding-bottom:1em;
+  padding-bottom:1rem;
+  font-style:italic;
+}
+
+p{
   padding-bottom:1em;
 }
 
+a{
+  color:$cream;
+  text-decoration:none;
+  display:inline-block;
+  box-shadow:
+    inset $blue 0 1.2em 0,
+    inset $orange 0 1.4em 0;
+  transition:color,box-shadow;
+  transition-duration:.2s;
+  &:hover{
+    color:$cream;
+    box-shadow:
+      inset $blue 0 .1em 0,
+      inset $orange 0 1.4em 0;
+  }
+  &:active{
+    color:$cream;
+    box-shadow:
+      inset $blue 0 .1em 0,
+      inset darken($orange,10%) 0 1.4em 0;
+  }
+}
+
+ul{
+  padding:1em 0 2em 0;
+}
+li{
+  margin-bottom:.5em;
+  margin-left:-1.1em;
+  font-style:italic;
+  list-style:none;
+  padding-left:.5em;
+  border-left:.6em solid $cream;
+}
+
 em{font-style:italic;}
-strong{font-weight:bold;}
+strong{font-weight:900;}
+
+button{
+  @extend %buttonReset;
+  @extend %button;
+  margin-bottom:1em;
+}
+
+code{
+  display:inline-block;
+  padding:0em .2em;
+  font-size:1em;
+  background:$grey;
+  color:darken($blue,20%);
+  font-family:$code;
+}

@@ -1,20 +1,6 @@
 // General Utilities
-// 01. Clearfix
-// 02. Hiding things sensibly
-// 03. Global Box Sizing
-// 04. Selection Colours
 
-// 01. Clearfix
-.clearfix:before,
-.clearfix:after{
-  content:' ';
-  display:table;
-}
-.clearfix:after{clear:both;}
-// For IE 6/7 only – Include this rule to trigger hasLayout and contain floats.
-.clearfix{zoom:1;}
-
-// 02. Hiding things sensibly
+// Hiding things sensibly
 // Hide from both screenreaders and browsers:h5bp.com/u
 .hidden {
   display:none !important;
@@ -47,18 +33,16 @@
   visibility:hidden;
 }
 
-// 03. Global Box Sizing
-html{box-sizing:border-box;}
-*,
-*:before,
-*:after{box-sizing:inherit;}
+// Clearfix
+.clearfix{
+  @extend %cf;
+}
+//.clearfix:before,
+//.clearfix:after{
+//  content:' ';
+//  display:table;
+//}
+//.clearfix:after{clear:both;}
+//// For IE 6/7 only – Include this rule to trigger hasLayout and contain floats.
+//.clearfix{zoom:1;}
 
-// 04. Selection Colours
-::selection{
-  color:$white;
-  background:$black;
-}
-a::selection{
-  color:$black;
-  background:$white;
-}
