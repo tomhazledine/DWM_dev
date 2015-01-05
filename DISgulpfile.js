@@ -2,12 +2,11 @@
 var gulp         = require('gulp');
 
 // Include Our Plugins
-var sass         = require('gulp-sass');
+var sass         = require('gulp-ruby-sass');
 var concat       = require('gulp-concat');
 var uglify       = require('gulp-uglify');
 var rename       = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
-var minifycss    = require('gulp-minify-css');
+var autoprefixer = require('autoprefixer-core');
 var imagemin     = require('gulp-imagemin');
 var cache        = require('gulp-cache');
 var scsslint     = require('gulp-scss-lint');
@@ -19,37 +18,42 @@ var size         = require('gulp-size');
 var lr           = require('tiny-lr');
 var gutil        = require('gulp-util');
 var plumber      = require('gulp-plumber');
+var sourcemaps   = require('gulp-sourcemaps');
+var postcss      = require('gulp-postcss');
 var server       = lr();
 var shell        = require('gulp-shell');
 
 // This will handle our errors
 var onError = function (err) {
   gutil.log(gutil.colors.red(err));
+  //this.emit('end');
 };
 
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src('uncompressed/scss/*.scss')
-    .pipe(sass({errLogToConsole: true}))
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+    .pipe(plumber({
+      errorHandler: onError
+    }))
+    .pipe(sass({sourcemap: true, sourcemapPath: '../../uncompressed/scss', style: 'compressed'}))
+    .pipe(sourcemaps.init())
+    .pipe(postcss([autoprefixer]))
+    .pipe(sourcemaps.write('.'))
     .pipe(size({title: 'css'}))
     .pipe(gulp.dest('assets/css'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(minifycss())
-    .pipe(size({title: 'css.min'}))
-    .pipe(gulp.dest('assets/css'))
+    .pipe(test)
     .pipe(livereload(server));
 });
 
 // Lets lint our CSS
-gulp.task('scss-lint', function() {
+gulp.task('scsslint', function() {
   gulp.src('uncompressed/scss/*.scss')
     .pipe(scsslint({'config': 'defaultLint.yml'}));
 });
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src(['uncompressed/js/jquery/jquery.js','uncompressed/js/vendor/**/*.js','uncompressed/js/custom/*.js'])
+    return gulp.src(['uncompressed/js/jquery/jquery.js','uncompressed/js/vendor/*.js','uncompressed/js/custom/*.js'])
     .pipe(plumber({
       errorHandler: onError
     }))
@@ -119,6 +123,9 @@ gulp.task('fonts', function() {
 
 // Livereload
 gulp.task('listen', function(next) {
+    //return jekyll();
+    //shell.task('rm -rf _site/*; jekyll build');
+    //shell.task('printf "shell task works!"');
     server.listen(35728, function(err) {
         if (err) return console.log;
         next();
@@ -127,6 +134,9 @@ gulp.task('listen', function(next) {
 
 // Shell Script for Jekyll
 gulp.task('jekyll', shell.task('jekyll build'));
+//function jekyll(){
+//  shell.task('rm -rf _site/*; jekyll build');
+//}
 
 // Watch Files For Changes
 gulp.task('watch', function() {
@@ -146,4 +156,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['sass', 'scripts', 'images', 'fonts', 'iconfont', 'listen', 'watch']);
+gulp.task('default', ['watch']);

@@ -13,11 +13,21 @@
 }
 
 // Fonts
-$display:sans-serif;
-$text:'Merriweather', georgia,serif;
+$display:"P22UndergroundW01-Mediu",sans-serif;
+$text:"BaskervilleMTW01-Roman", helvetica, georgia,serif;
 $utility:Helvetica,Arial,sans-serif;
 $icons:'iconFont';
 $code:monospace;
+
+/*
+font-family:'BaskervilleMTW01-Roman';
+font-family:'Baskerville MT W01 It';
+font-family:'Baskerville MT W01 SmBd';
+font-family:'BaskervilleMTW01-SmBdIt';
+font-family:'Baskerville MT W01 Bd';
+font-family:'BaskervilleMTW01-BdIt';
+font-family:'P22UndergroundW01-Mediu';
+*/
 
 // Weights
 $book:400;
