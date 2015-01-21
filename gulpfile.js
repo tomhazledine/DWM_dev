@@ -126,7 +126,7 @@ gulp.task('listen', function(next) {
 });
 
 // Shell Script for Jekyll
-gulp.task('jekyll', shell.task('jekyll build'));
+gulp.task('jekyll', shell.task('rm -rf _site/*; jekyll build'));
 
 // Watch Files For Changes
 gulp.task('watch', function() {
