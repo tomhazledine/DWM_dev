@@ -20,8 +20,8 @@ exclude: [config.rb,
           node_modules]
 navigation:
   - text: Home
-    url: /
+    url: 
   - text: About
-    url: /about/
+    url: about/
   - text: Team
-    url: /team/
+    url: team/

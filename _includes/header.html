@@ -9,7 +9,7 @@
 	  	{% assign url = page.url|remove:'index.html' %}
 		  {% for link in site.navigation %}
 		    <li {% if url == link.url %}class="current"{% endif %}>
-		      <a href="{{ link.url }}">{{ link.text }}</a>
+		      <a href="{{ site.url }}{{ link.url }}">{{ link.text }}</a>
 		    </li>
 		  {% endfor %}
 	  </ul>

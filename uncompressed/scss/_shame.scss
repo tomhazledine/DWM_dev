@@ -50,14 +50,22 @@ html{
   // padding:0;
   .contentWrapperInner{
     padding:0;
-    li{
+    text-align:center;
+    font-family:$display;
+    ul{
       display:block;
-      min-width:4em;
+      width:100%;
+      text-align:center;
+    }
+    li{
+      display:inline;
+      // min-width:4em;
+      text-align:center;
       margin-bottom:0;
       margin-left:0;
       padding-left:0;
       margin-right:2em;
-      font-style:italic;
+      font-style:normal;
       list-style:none;
       border-left:0;
       float:left;
