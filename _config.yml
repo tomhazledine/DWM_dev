@@ -1,6 +1,7 @@
 # Site settings
 title: DWM Development Testing
 email: tom@digitalwebmedia.co.uk
+permalink: /:title
 description: > # this means to ignore newlines until "baseurl:"
   Testing typography and deployment solutions for the new Digital Web Media website.
 baseurl: "/DWM_dev/" # the subpath of your site, e.g. /blog/
@@ -10,8 +11,17 @@ github_username:  tomhazledine
 
 # Build settings
 markdown: kramdown
+kramdown:
+  auto_ids: false
 exclude: [config.rb,
           gulpfile.js,
           uncompressed,
           package.json,
           node_modules]
+navigation:
+  - text: Home
+    url: /
+  - text: About
+    url: /about/
+  - text: Team
+    url: /team/

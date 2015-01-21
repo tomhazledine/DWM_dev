@@ -1,6 +1,12 @@
 {% include head.html %}
 
 <header class="site-header">
-  <!-- <h1>{{ site.title }}</h1> -->
+  <a href="/">{{ site.title }}</a>
+
+  {% for link in site.navigation %}
+    <li {% if url == link.url or page.layout == link.layout %}class="active"{% endif %}>
+      <a href="{{ link.url }}">{{ link.text }}</a>
+    </li>
+  {% endfor %}
 
 </header>
