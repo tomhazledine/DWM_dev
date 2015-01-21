@@ -70,7 +70,9 @@ button {
   button:hover {
     background: #ff764d; }
   button:active {
-    background: #ff6033; }
+    background: #ff4c1a; }
+  button:focus {
+    outline: none; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -79,6 +81,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
+
+*:focus {
+  outline: none;
+  -webkit-box-shadow: #ff764d 0 0 0 0.2em;
+          box-shadow: #ff764d 0 0 0 0.2em; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -90,49 +97,6 @@ html {
 
 html {
   font-size: 100%; }
-
-.hidden {
-  display: none !important;
-  visibility: hidden; }
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto; }
-
-.invisible {
-  visibility: hidden; }
-
-html {
-  background: #f6f6f3;
-  color: #435963;
-  font-family: "BaskervilleMTW01-Roman", helvetica, georgia, serif;
-  line-height: 1.6; }
-
-.contentWrapperInner {
-  width: 90%;
-  max-width: 40em;
-  margin: 0 auto;
-  padding: 4em 0; }
-
-.contentWrapper {
-  padding: 1em; }
-  .contentWrapper.dark {
-    background: #597887;
-    color: #f6f6f3; }
 
 h1 {
   font-size: 3em; }
@@ -178,6 +142,9 @@ a {
     color: #f6f6f3;
     -webkit-box-shadow: inset #597887 0 0.1em 0, inset #435963 0 1.4em 0;
             box-shadow: inset #597887 0 0.1em 0, inset #435963 0 1.4em 0; }
+  a:focus {
+    -webkit-box-shadow: inset #f6f6f3 0 0.1em 0, inset #ced7db 0 1.3em 0, inset #b5c0c4 0 1.4em 0, #ff764d 0 0 0 0.2em;
+            box-shadow: inset #f6f6f3 0 0.1em 0, inset #ced7db 0 1.3em 0, inset #b5c0c4 0 1.4em 0, #ff764d 0 0 0 0.2em; }
 
 ul {
   padding: 1em 0 2em 0; }
@@ -190,6 +157,81 @@ li {
   padding-left: 0.5em;
   border-left: 0.6em solid #f6f6f3; }
 
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+html {
+  background: #f6f6f3;
+  color: #435963;
+  font-family: "BaskervilleMTW01-Roman", helvetica, georgia, serif;
+  line-height: 1.6; }
+
+.contentWrapperInner {
+  width: 90%;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 4em 0; }
+
+.contentWrapper {
+  padding: 1em; }
+  .contentWrapper.dark {
+    background: #597887;
+    color: #f6f6f3; }
+    .contentWrapper.dark a {
+      color: #fff;
+      -webkit-box-shadow: inset #597887 0 1.3em 0, inset #435963 0 1.3em 0, inset #b5c0c4 0 1.4em 0;
+              box-shadow: inset #597887 0 1.3em 0, inset #435963 0 1.3em 0, inset #b5c0c4 0 1.4em 0; }
+      .contentWrapper.dark a:hover {
+        color: #fff;
+        -webkit-box-shadow: inset #597887 0 0.1em 0, inset #435963 0 1.3em 0, inset #b5c0c4 0 1.4em 0;
+                box-shadow: inset #597887 0 0.1em 0, inset #435963 0 1.3em 0, inset #b5c0c4 0 1.4em 0; }
+      .contentWrapper.dark a:active {
+        color: #f6f6f3;
+        -webkit-box-shadow: inset #597887 0 0.1em 0, inset #435963 0 1.4em 0;
+                box-shadow: inset #597887 0 0.1em 0, inset #435963 0 1.4em 0; }
+      .contentWrapper.dark a:focus {
+        -webkit-box-shadow: inset #597887 0 0.1em 0, inset #435963 0 1.3em 0, inset #b5c0c4 0 1.4em 0, #ff764d 0 0 0 0.2em;
+                box-shadow: inset #597887 0 0.1em 0, inset #435963 0 1.3em 0, inset #b5c0c4 0 1.4em 0, #ff764d 0 0 0 0.2em; }
+
+.contentWrapper.siteHeader .contentWrapperInner {
+  padding: 0; }
+  .contentWrapper.siteHeader .contentWrapperInner li {
+    display: block;
+    min-width: 4em;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 2em;
+    font-style: italic;
+    list-style: none;
+    border-left: 0;
+    float: left; }
+    .contentWrapper.siteHeader .contentWrapperInner li.current {
+      font-weight: 700;
+      text-transform: uppercase; }
+
 em {
   font-style: italic; }
 
@@ -197,6 +239,7 @@ strong {
   font-weight: 900; }
 
 button {
+  color: #fff;
   margin-bottom: 1em; }
 
 code {

@@ -28,6 +28,10 @@
     background:$orange;
   }
   &:active{
-    background:darken($orange,5%);
+    background:darken($orange,10%);
+  }
+  &:focus{
+    outline:none;
+    // box-shadow:$orange 0 0 0 .4em;
   }
 }
