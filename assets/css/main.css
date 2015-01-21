@@ -216,15 +216,21 @@ html {
                 box-shadow: inset #597887 0 0.1em 0, inset #435963 0 1.3em 0, inset #b5c0c4 0 1.4em 0, #ff764d 0 0 0 0.2em; }
 
 .contentWrapper.siteHeader .contentWrapperInner {
-  padding: 0; }
-  .contentWrapper.siteHeader .contentWrapperInner li {
+  padding: 0;
+  text-align: center;
+  font-family: "P22 Underground W01", sans-serif; }
+  .contentWrapper.siteHeader .contentWrapperInner ul {
     display: block;
-    min-width: 4em;
+    width: 100%;
+    text-align: center; }
+  .contentWrapper.siteHeader .contentWrapperInner li {
+    display: inline;
+    text-align: center;
     margin-bottom: 0;
     margin-left: 0;
     padding-left: 0;
     margin-right: 2em;
-    font-style: italic;
+    font-style: normal;
     list-style: none;
     border-left: 0;
     float: left; }
