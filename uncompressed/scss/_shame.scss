@@ -1,10 +1,3 @@
-html{
-  background:$cream;
-  color:$dark;
-  font-family:$text;
-  line-height:1.6;
-}
-
 .contentWrapperInner{
   width:90%;
   max-width:40em;
@@ -25,29 +18,29 @@ footer{
     color:$cream;
     a{
       color:$white;
-      box-shadow:
-        inset $blue 0 1.3em 0,
-        inset $dark 0 1.3em 0,
-        inset $linkUnderline 0 1.4em 0;
+      // box-shadow:
+      //   inset $blue 0 1.3em 0,
+      //   inset $dark 0 1.3em 0,
+      //   inset $linkUnderline 0 1.4em 0;
       &:hover{
         color:$white;
-        box-shadow:
-          inset $blue 0 .1em 0,
-          inset $dark 0 1.3em 0,
-          inset $linkUnderline 0 1.4em 0;
+        // box-shadow:
+        //   inset $blue 0 .1em 0,
+        //   inset $dark 0 1.3em 0,
+        //   inset $linkUnderline 0 1.4em 0;
       }
       &:active{
         color:$cream;
-        box-shadow:
-          inset $blue 0 .1em 0,
-          inset $dark 0 1.4em 0;
+        // box-shadow:
+        //   inset $blue 0 .1em 0,
+        //   inset $dark 0 1.4em 0;
       }
       &:focus{
-        box-shadow:
-          inset $blue 0 .1em 0,
-          inset $dark 0 1.3em 0,
-          inset $linkUnderline 0 1.4em 0,
-          $orange 0 0 0 .2em;
+        // box-shadow:
+        //   inset $blue 0 .1em 0,
+        //   inset $dark 0 1.3em 0,
+        //   inset $linkUnderline 0 1.4em 0,
+        //   $orange 0 0 0 .2em;
       }
     }
   }
@@ -75,3 +68,12 @@ code{
 
 .output1{color:$red;}
 .output2{color:$green;}
+
+// html.mti-loading{
+//   color:$cream;
+//   a{color:$cream;}
+//   .dark{
+//     color:$blue;
+//     a{color:$blue;}
+//   }
+// }

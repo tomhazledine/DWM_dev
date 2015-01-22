@@ -1,33 +1,46 @@
 .contentWrapper.siteHeader .contentWrapperInner{
   padding:0;
-  font-family:$display;
+  // font-family:$display;
+  font-weight:500;
 }
 
 .siteHeader .navLogo{
   width:6em;
-  // float:left;
+  float:left;
+  font-family:$brand;
+  font-size:2em;
+  font-weight:400;
 }
 
-.siteHeader ul{
-  display:block;
-  width:100%;
+.siteHeader .headerNav{
+  float:left;
+  // display:block;
+  // width:100%;
   // text-align:center;
   padding:0;
   li{
-    display:inline;
-    // min-width:4em;
+    display:inline-block;
+    padding:0;
+    margin:0;
+    float:left;
     text-align:left;
-    margin-bottom:0;
-    margin-left:0;
-    padding-left:0;
-    margin-right:2em;
+    // margin-bottom:0;
+    // margin-left:0;
+    // padding-left:0;
+    margin-right:1em;
     font-style:normal;
     list-style:none;
     border-left:0;
     float:none;
     &.current{
-      font-weight:$bold;
-      text-transform:uppercase;
+      // font-weight:$bold;
+      // text-transform:uppercase;
+      // border-bottom:2px solid $linkUnderline;
+      // background:$cream;
+      // color:$blue;
+    }
+    a{
+      // @extend %aReset;
     }
   }
 }

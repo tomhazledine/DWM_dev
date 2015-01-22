@@ -1,3 +1,16 @@
+html{
+  background:$cream;
+  color:$dark;
+  font-family:$text;
+  line-height:1.6;
+  min-height:101%;
+  background:$blue;
+}
+body{
+  min-height:100%;
+  background:$cream;
+}
+
 h1{font-size:3em;}
 h2{font-size:2em;}
 h3{font-size:1.6em;}
@@ -11,6 +24,8 @@ h1,h2,h3,h4,h5,h5{
   // font-style:italic;
   text-align:center;
   font-family:$display;
+  font-weight:700;
+  font-style:italic;
 }
 
 p{
@@ -19,33 +34,33 @@ p{
 
 a{
   color:$dark;
-  text-decoration:none;
+  // text-decoration:none;
   display:inline-block;
-  box-shadow:
-    inset $cream 0 1.3em 0,
-    inset $creamHover 0 1.3em 0,
-    inset $linkUnderline 0 1.4em 0;
+  // box-shadow:
+  //   inset $cream 0 1.3em 0,
+  //   inset $creamHover 0 1.3em 0,
+  //   inset $linkUnderline 0 1.4em 0;
   transition:color,box-shadow;
   transition-duration:.2s;
   &:hover{
     color:$dark;
-    box-shadow:
-      inset $cream 0 .1em 0,
-      inset $creamHover 0 1.3em 0,
-      inset $linkUnderline 0 1.4em 0;
+    // box-shadow:
+    //   inset $cream 0 .1em 0,
+    //   inset $creamHover 0 1.3em 0,
+    //   inset $linkUnderline 0 1.4em 0;
   }
   &:active{
     color:$cream;
-    box-shadow:
-      inset $blue 0 .1em 0,
-      inset $dark 0 1.4em 0;
+    // box-shadow:
+    //   inset $blue 0 .1em 0,
+    //   inset $dark 0 1.4em 0;
   }
   &:focus{
-    box-shadow:
-      inset $cream 0 .1em 0,
-      inset $creamHover 0 1.3em 0,
-      inset $linkUnderline 0 1.4em 0,
-      $orange 0 0 0 .2em;
+    // box-shadow:
+    //   inset $cream 0 .1em 0,
+    //   inset $creamHover 0 1.3em 0,
+    //   inset $linkUnderline 0 1.4em 0,
+    //   $orange 0 0 0 .2em;
   }
 }
 

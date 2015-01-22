@@ -3,53 +3,44 @@ layout: default
 ---
 
 <div class="contentWrapper">
-  <div class="contentWrapperInner">
+    <div class="contentWrapperInner">
 
-    <h2>Hello World! This will still be working (maybe) !!!</h2>
-    
-    {% capture homeContent %}{% include homeContent.md %}{% endcapture %}
-    {{ homeContent | markdownify }}
+        {% capture homeContent %}{% include homeContent.md %}{% endcapture %}
+        {{ homeContent | markdownify }}
 
-    <button>This is a button</button>
+        <button>This is a button</button>
 
-    <p>Much like links, buttons have <code>hover</code> and <code>active</code> states. If anything, the <code>active</code> state is <em>more</em> important here, as users need a strong visual cue to show that they have successfully clicked the button.</p>
-  
-  </div>
+        {% capture lorem %}{% include lorem.md %}{% endcapture %}
+        {{ lorem | markdownify }}
+
+    </div>
 </div>
 
 <div class="contentWrapper dark">
-  <div class="contentWrapperInner">
-  
-    <h3 id="this-is-a-third-level-heading">This is a third-level heading.</h3>
+    <div class="contentWrapperInner">
 
-    <p>Here’s a regular paragraph followed by an unordered list. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur.</p>
+        {% capture lorem %}{% include lorem.md %}{% endcapture %}
+        {{ lorem | markdownify }}
 
-    <ul>
-      <li>List entries look like this.</li>
-      <li>Who knows what will happen?!</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-      <li>Laboriosam incidunt reiciendis sunt eveniet quos qui fuga ipsum accusamus, ut molestias!</li>
-      <li>Velit voluptates modi a atque quas, magnam itaque omnis placeat.</li>
-    </ul>
+        <ul>
+        <li>List entries look like this.</li>
+        <li>Who knows what will happen?!</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+        <li>Laboriosam incidunt reiciendis sunt eveniet quos qui fuga ipsum accusamus, ut molestias!</li>
+        <li>Velit voluptates modi a atque quas, magnam itaque omnis placeat.</li>
+        </ul>
 
-    <p>Exercitation ullamco <a href="">laboris nisi</a> ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. <strong>Excepteur sint</strong> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        {% capture lorem %}{% include lorem.md %}{% endcapture %}
+        {{ lorem | markdownify }}
 
-  </div>
+    </div>
 </div>
 
 <div class="contentWrapper">
-  <div class="contentWrapperInner">
+    <div class="contentWrapperInner">
 
-    <h3 id="this-is-another-third-level-heading">This is another third-level heading.</h3>
+        {% capture lorem %}{% include lorem.md %}{% endcapture %}
+        {{ lorem | markdownify }}
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. <em>Ut enim ad minim</em> veniam,
-    quis nostrud exercitation ullamco <a href="">laboris nisi</a> ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. <strong>Excepteur sint</strong> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-  </div>
+    </div>
 </div>
