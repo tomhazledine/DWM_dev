@@ -289,8 +289,11 @@ input, textarea {
     list-style: none;
     border-left: 0;
     float: none; }
-    .siteHeader .headerNav li.current {
-      text-decoration: line-through; }
+    .siteHeader .headerNav li.current a {
+      cursor: default;
+      color: #b5c0bc; }
+      .siteHeader .headerNav li.current a:hover {
+        color: #b5c0bc; }
 
 .hidden {
   display: none !important;

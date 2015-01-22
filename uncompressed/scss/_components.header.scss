@@ -39,7 +39,12 @@
     border-left:0;
     float:none;
     &.current{
-      text-decoration:line-through;
+      // text-decoration:line-through;
+      a{
+        cursor:default;
+        color:$greyDark;
+        &:hover{color:$greyDark;}
+      }
       // font-weight:$bold;
       // text-transform:uppercase;
       // border-bottom:2px solid $linkUnderline;
