@@ -1,12 +1,11 @@
-.contentWrapper.siteHeader .contentWrapperInner{
-  padding:0;
-  // font-family:$display;
-  // font-weight:500;
+.siteHeaderInner{
+  padding:0 1em;
 }
 
 .siteHeader{
   font-weight:500;
   line-height:1;
+  background:$white;
   a{text-decoration:none;}
 }
 
@@ -40,6 +39,7 @@
     border-left:0;
     float:none;
     &.current{
+      text-decoration:line-through;
       // font-weight:$bold;
       // text-transform:uppercase;
       // border-bottom:2px solid $linkUnderline;

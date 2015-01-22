@@ -1,7 +1,7 @@
 .mobileNavToggle{
     @extend %buttonReset;
     outline:none;
-    width:2em;
+    width:1.8em;
     height:1em;
     // margin:.9em 0;
     // background:$cream;
@@ -14,27 +14,28 @@
 
 .navicon{
     position:absolute;
-    width:2em;
+    width:1.8em;
     height:4px;
     top:50%;
     margin-top:-2px;
     display:block;
-    background:$cream;
+    background:darken($grey,20%);
     &:after,&:before{
         transition:transform,top,bottom;
         transition-duration:.2s;
         content:"";
         display:block;
         position:absolute;
-        width:2em;
+        width:1.8em;
         height:4px;
-        background:$cream;
+        background:darken($grey,20%);
     }
     &:before{
         top:-.5em;
     }
     &:after{
         bottom:-.5em;
+        // width:1.9em;
     }
     &.open{
         background:none;
@@ -62,6 +63,7 @@
 .mobileNav{
     max-height:0;
     width:100%;
+    overflow:hidden;
     transition:max-height;
     transition-duration:.3s;
     &.open{

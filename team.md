@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: team
 title: Our Team
 permalink: /team/
 group: "navigation"
@@ -7,6 +7,4 @@ group: "navigation"
 
 ## there's loads of us
 
-* Boss
-* VP
-* Grunt
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel laboriosam aut, ipsum eius optio maxime amet quam autem sapiente necessitatibus deserunt cumque tempore, perferendis qui aliquid dolorum accusamus sit totam.

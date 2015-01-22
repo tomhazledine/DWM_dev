@@ -9,17 +9,8 @@ layout: default
         </header>
 
         <article class="post-content">
-            {{ content }}
-            
-            <h3><a href="mailto:{{ site.dwmEmail }}">{{ site.dwmEmail }}</a></h3>
 
-            <h3><a href="tel:{{ site.dwmTelLink }}">{{ site.dwmTel }}</a></h3>
-
-            <ul>
-            {% for link in site.dwmAddress %}
-                <li>{{ link.text }}</li>
-            {% endfor %}
-            </ul>
+            <p>Need a website? Get in touch and we'll talk you through what we can do for you. Leave a message through the form below and we'll get right back to you, or use the contact info at the bottom of this page. We'd love to hear from you!</p>
 
             <form action="http://formspree.io/tom@wearedwm.com" method="POST">
                 <input type="hidden" name="_next" value="{{ site.url }}/thanks/" />
@@ -27,6 +18,18 @@ layout: default
                 <textarea name="body" rows="5" placeholder="Your message&hellip;"></textarea>
                 <button class="button">Submit</button>
             </form>
+
+            <!-- {{ content }} -->
+            
+            <h4><a href="mailto:{{ site.dwmEmail }}">{{ site.dwmEmail }}</a></h4>
+
+            <h4><a href="tel:{{ site.dwmTelLink }}">{{ site.dwmTel }}</a></h4>
+
+            <h4>
+            {% for link in site.dwmAddress %}
+                {{ link.text }}</br>
+            {% endfor %}
+            </h4>
 
         </article>
 

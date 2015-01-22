@@ -185,7 +185,7 @@ input, textarea {
 
 .mobileNavToggle {
   outline: none;
-  width: 2em;
+  width: 1.8em;
   height: 1em;
   float: right;
   display: none;
@@ -196,12 +196,12 @@ input, textarea {
 
 .navicon {
   position: absolute;
-  width: 2em;
+  width: 1.8em;
   height: 4px;
   top: 50%;
   margin-top: -2px;
   display: block;
-  background: #f6f6f3; }
+  background: #b5c0bc; }
   .navicon:after, .navicon:before {
     -webkit-transition: -webkit-transform, top, bottom;
             transition: transform, top, bottom;
@@ -210,9 +210,9 @@ input, textarea {
     content: "";
     display: block;
     position: absolute;
-    width: 2em;
+    width: 1.8em;
     height: 4px;
-    background: #f6f6f3; }
+    background: #b5c0bc; }
   .navicon:before {
     top: -0.5em; }
   .navicon:after {
@@ -243,6 +243,7 @@ input, textarea {
 .mobileNav {
   max-height: 0;
   width: 100%;
+  overflow: hidden;
   -webkit-transition: max-height;
           transition: max-height;
   -webkit-transition-duration: 0.3s;
@@ -255,12 +256,13 @@ input, textarea {
     padding: 1em;
     text-align: center; }
 
-.contentWrapper.siteHeader .contentWrapperInner {
-  padding: 0; }
+.siteHeaderInner {
+  padding: 0 1em; }
 
 .siteHeader {
   font-weight: 500;
-  line-height: 1; }
+  line-height: 1;
+  background: #fff; }
   .siteHeader a {
     text-decoration: none; }
 
@@ -287,6 +289,8 @@ input, textarea {
     list-style: none;
     border-left: 0;
     float: none; }
+    .siteHeader .headerNav li.current {
+      text-decoration: line-through; }
 
 .hidden {
   display: none !important;
