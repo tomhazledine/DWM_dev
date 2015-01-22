@@ -17,5 +17,17 @@
 			{% endfor %}
 		</ul>
 
+		<button class="mobileNavToggle"><span class="navicon"></span><span class="visuallyhidden">Menu</span></button>
+
 	</div>
+
+	<ul class="mobileNav clearfix">
+			{% assign url = page.url|remove:'index.html' %}
+			{% for link in site.navigation %}
+				{% capture linkURL %}/{{ link.url }}{% endcapture %}
+				<li {% if url == linkURL %}class="current"{% endif %}>
+				  <a href="{{ site.url }}{{ link.url }}">{{ link.text }}</a>
+				</li>
+			{% endfor %}
+		</ul>
 </header>

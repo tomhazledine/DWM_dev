@@ -23,9 +23,9 @@ layout: default
 
             <form action="http://formspree.io/tom@wearedwm.com" method="POST">
                 <input type="hidden" name="_next" value="{{ site.url }}/thanks/" />
-                <input type="email" name="_replyto">
-                <textarea name="body"></textarea>
-                <input type="submit" value="Send">
+                <input type="email" name="_replyto" placeholder="Your email address">
+                <textarea name="body" rows="5" placeholder="Your message&hellip;"></textarea>
+                <button class="button">Submit</button>
             </form>
 
         </article>

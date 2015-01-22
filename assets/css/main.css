@@ -47,7 +47,7 @@ font-family:'P22UndergroundW01-Mediu';
 .clearfix {
   zoom: 1; }
 
-button {
+.button, .mobileNavToggle {
   display: block;
   background: inherit;
   color: inherit;
@@ -62,24 +62,27 @@ button {
   -webkit-appearance: none;
   font-family: inherit; }
 
-button {
+.button {
   background: #30424a;
   color: #fff;
   padding: 0.5em 1em;
   border-radius: 4px;
   font-weight: 300;
   line-height: 1;
+  font-size: 1.4em;
   text-align: center;
   -webkit-transition: background;
           transition: background;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  font-family: 'Playfair Display', serif; }
-  button:hover {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  letter-spacing: 0.1em; }
+  .button:hover {
     background: #ff764d; }
-  button:active {
+  .button:active {
     background: #ff4c1a; }
-  button:focus {
+  .button:focus {
     outline: none; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -89,11 +92,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
-
-*:focus {
-  outline: none;
-  -webkit-box-shadow: #ff764d 0 0 0 0.2em;
-          box-shadow: #ff764d 0 0 0 0.2em; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -143,46 +141,141 @@ h1, h2, h3, h4, h5, h5 {
   font-weight: 700;
   font-style: italic; }
 
-p {
-  padding-bottom: 1em; }
-
 a {
-  color: #435963;
-  display: inline-block;
-  -webkit-transition: color, -webkit-box-shadow;
-          transition: color, box-shadow;
+  color: inherit;
+  -webkit-transition: color;
+          transition: color;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s; }
   a:hover {
-    color: #435963; }
-  a:active {
-    color: #f6f6f3; }
+    color: #ff764d; }
 
-ul {
-  padding: 1em 0 2em 0; }
+p {
+  padding-bottom: 1em; }
 
 li {
-  margin-bottom: 0.5em;
-  margin-left: -1.1em;
-  font-style: italic;
-  list-style: none;
-  padding-left: 0.5em;
-  border-left: 0.6em solid #f6f6f3; }
+  list-style: none; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: 900; }
+
+.button {
+  color: #fff;
+  margin-bottom: 1em; }
+
+code {
+  display: inline-block;
+  padding: 0em 0.2em;
+  font-size: 1em;
+  background: #ecefee;
+  color: #30424a;
+  font-family: monospace; }
+
+input, textarea {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1em;
+  border: 0;
+  padding: 1em;
+  margin-bottom: 1em;
+  font-family: 'Raleway', sans-serif; }
+
+.mobileNavToggle {
+  outline: none;
+  width: 2em;
+  height: 1em;
+  float: right;
+  display: none;
+  position: relative; }
+  @media (max-width: 750px) {
+    .mobileNavToggle {
+      display: block; } }
+
+.navicon {
+  position: absolute;
+  width: 2em;
+  height: 4px;
+  top: 50%;
+  margin-top: -2px;
+  display: block;
+  background: #f6f6f3; }
+  .navicon:after, .navicon:before {
+    -webkit-transition: -webkit-transform, top, bottom;
+            transition: transform, top, bottom;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 4px;
+    background: #f6f6f3; }
+  .navicon:before {
+    top: -0.5em; }
+  .navicon:after {
+    bottom: -0.5em; }
+  .navicon.open {
+    background: none; }
+
+.mobileNavToggle.open .navicon {
+  background: none; }
+  .mobileNavToggle.open .navicon:before, .mobileNavToggle.open .navicon:after {
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    width: 1.5em; }
+  .mobileNavToggle.open .navicon:before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 50%;
+    margin-top: -2px; }
+  .mobileNavToggle.open .navicon:after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 50%;
+    margin-bottom: -2px; }
+
+.mobileNav {
+  max-height: 0;
+  width: 100%;
+  -webkit-transition: max-height;
+          transition: max-height;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+  .mobileNav.open {
+    max-height: 100em; }
+  .mobileNav li {
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    text-align: center; }
 
 .contentWrapper.siteHeader .contentWrapperInner {
-  padding: 0;
-  font-weight: 500; }
+  padding: 0; }
+
+.siteHeader {
+  font-weight: 500;
+  line-height: 1; }
+  .siteHeader a {
+    text-decoration: none; }
 
 .siteHeader .navLogo {
   width: 6em;
   float: left;
   font-family: 'BebasNeue', 'Raleway', sans-serif;
-  font-size: 2em;
   font-weight: 400; }
 
 .siteHeader .headerNav {
   float: left;
   padding: 0; }
+  @media (max-width: 750px) {
+    .siteHeader .headerNav {
+      display: none; } }
   .siteHeader .headerNav li {
     display: inline-block;
     padding: 0;
@@ -232,34 +325,10 @@ footer {
   background: #597887; }
 
 .contentWrapper {
-  padding: 1em; }
+  padding: 1em 0; }
   .contentWrapper.dark {
     background: #597887;
     color: #f6f6f3; }
-    .contentWrapper.dark a {
-      color: #fff; }
-      .contentWrapper.dark a:hover {
-        color: #fff; }
-      .contentWrapper.dark a:active {
-        color: #f6f6f3; }
-
-em {
-  font-style: italic; }
-
-strong {
-  font-weight: 900; }
-
-button {
-  color: #fff;
-  margin-bottom: 1em; }
-
-code {
-  display: inline-block;
-  padding: 0em 0.2em;
-  font-size: 1em;
-  background: #ecefee;
-  color: #30424a;
-  font-family: monospace; }
 
 .output1 {
   color: #ff4136; }

@@ -12,58 +12,11 @@ footer{
 }
 
 .contentWrapper{
-  padding:1em;
+  padding:1em 0;
   &.dark{
     background:$blue;
     color:$cream;
-    a{
-      color:$white;
-      // box-shadow:
-      //   inset $blue 0 1.3em 0,
-      //   inset $dark 0 1.3em 0,
-      //   inset $linkUnderline 0 1.4em 0;
-      &:hover{
-        color:$white;
-        // box-shadow:
-        //   inset $blue 0 .1em 0,
-        //   inset $dark 0 1.3em 0,
-        //   inset $linkUnderline 0 1.4em 0;
-      }
-      &:active{
-        color:$cream;
-        // box-shadow:
-        //   inset $blue 0 .1em 0,
-        //   inset $dark 0 1.4em 0;
-      }
-      &:focus{
-        // box-shadow:
-        //   inset $blue 0 .1em 0,
-        //   inset $dark 0 1.3em 0,
-        //   inset $linkUnderline 0 1.4em 0,
-        //   $orange 0 0 0 .2em;
-      }
-    }
   }
-}
-
-
-em{font-style:italic;}
-strong{font-weight:900;}
-
-button{
-  @extend %buttonReset;
-  @extend %button;
-  color:$white;
-  margin-bottom:1em;
-}
-
-code{
-  display:inline-block;
-  padding:0em .2em;
-  font-size:1em;
-  background:$grey;
-  color:darken($blue,20%);
-  font-family:$code;
 }
 
 .output1{color:$red;}

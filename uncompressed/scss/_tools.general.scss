@@ -21,10 +21,13 @@
   border-radius:4px;
   font-weight:300;
   line-height:1;
+  font-size:1.4em;
   text-align:center;
   transition:background;
   transition-duration:.2s;
   font-family:$display;
+  font-style:italic;
+  letter-spacing:.1em;
   &:hover{
     background:$orange;
   }
