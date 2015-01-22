@@ -157,6 +157,32 @@ li {
   padding-left: 0.5em;
   border-left: 0.6em solid #f6f6f3; }
 
+.contentWrapper.siteHeader .contentWrapperInner {
+  padding: 0;
+  font-family: "P22 Underground W01", sans-serif; }
+
+.siteHeader .navLogo {
+  width: 6em; }
+
+.siteHeader ul {
+  display: block;
+  width: 100%;
+  padding: 0; }
+  .siteHeader ul li {
+    display: inline;
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 2em;
+    font-style: normal;
+    list-style: none;
+    border-left: 0;
+    float: none; }
+    .siteHeader ul li.current {
+      font-weight: 700;
+      text-transform: uppercase; }
+
 .hidden {
   display: none !important;
   visibility: hidden; }
@@ -194,6 +220,11 @@ html {
   margin: 0 auto;
   padding: 4em 0; }
 
+footer {
+  display: block;
+  height: 20em;
+  background: #597887; }
+
 .contentWrapper {
   padding: 1em; }
   .contentWrapper.dark {
@@ -215,29 +246,6 @@ html {
         -webkit-box-shadow: inset #597887 0 0.1em 0, inset #435963 0 1.3em 0, inset #b5c0c4 0 1.4em 0, #ff764d 0 0 0 0.2em;
                 box-shadow: inset #597887 0 0.1em 0, inset #435963 0 1.3em 0, inset #b5c0c4 0 1.4em 0, #ff764d 0 0 0 0.2em; }
 
-.contentWrapper.siteHeader .contentWrapperInner {
-  padding: 0;
-  text-align: center;
-  font-family: "P22 Underground W01", sans-serif; }
-  .contentWrapper.siteHeader .contentWrapperInner ul {
-    display: block;
-    width: 100%;
-    text-align: center; }
-  .contentWrapper.siteHeader .contentWrapperInner li {
-    display: inline;
-    text-align: center;
-    margin-bottom: 0;
-    margin-left: 0;
-    padding-left: 0;
-    margin-right: 2em;
-    font-style: normal;
-    list-style: none;
-    border-left: 0;
-    float: left; }
-    .contentWrapper.siteHeader .contentWrapperInner li.current {
-      font-weight: 700;
-      text-transform: uppercase; }
-
 em {
   font-style: italic; }
 
@@ -255,3 +263,9 @@ code {
   background: #ecefee;
   color: #30424a;
   font-family: monospace; }
+
+.output1 {
+  color: #ff4136; }
+
+.output2 {
+  color: #2ecc40; }

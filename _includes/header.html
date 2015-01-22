@@ -1,18 +1,23 @@
 {% include head.html %}
 
 <header class="siteHeader contentWrapper dark">
-  <div class="contentWrapperInner">
-  
-	  <span>{{ site.title }}</span>
-	  
-	  <ul>
-	  	{% assign url = page.url|remove:'index.html' %}
-		  {% for link in site.navigation %}
-		    <li {% if url == link.url %}class="current"{% endif %}>
-		      <a href="{{ site.url }}{{ link.url }}">{{ link.text }}</a>
-		    </li>
-		  {% endfor %}
-	  </ul>
+	<div class="contentWrapperInner clearfix">
 
-  </div>
+		<div class="navLogo">
+			<span>{{ site.title }}</span>
+		</div>
+
+		<nav class="headerNav">
+			<ul>
+				{% assign url = page.url|remove:'index.html' %}
+				{% for link in site.navigation %}
+					{% capture linkURL %}/{{ link.url }}{% endcapture %}
+					<li {% if url == linkURL %}class="current"{% endif %}>
+					  <a href="{{ site.url }}{{ linkURL }}">{{ link.text }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+
+	</div>
 </header>

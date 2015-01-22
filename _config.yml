@@ -1,11 +1,12 @@
 # Site settings
-title: DWM Development Testing
+title: DWM
 email: tom@digitalwebmedia.co.uk
 permalink: /:title
 description: > # this means to ignore newlines until "baseurl:"
   Testing typography and deployment solutions for the new Digital Web Media website.
-baseurl: "/DWM_dev/" # the subpath of your site, e.g. /blog/
-url: "http://tomhazledine.github.io/DWM_dev/" # the base hostname & protocol for your site
+url: "http://dwm.dev/" # Local
+# url: "http://tomhazledine.github.io/DWM_dev/" # the base hostname & protocol for your site
+# baseurl: "/DWM_dev/" # the subpath of your site, e.g. /blog/
 twitter_username: jekyllrb
 github_username:  tomhazledine
 
@@ -23,5 +24,17 @@ navigation:
     url: 
   - text: About
     url: about/
+  - text: Contact
+    url: contact/
   - text: Team
     url: team/
+
+# Content settings
+dwmEmail: hello@wearedwm.com
+dwmTel: "01637 818271"
+dwmTelLink: "01637818271"
+dwmAddress:
+  - text: "Victoria Parade Buildings"
+  - text: "East Street"
+  - text: "Newquay"
+  - text: "TR7 1BG"

@@ -11,6 +11,13 @@ html{
   margin:0 auto;
   padding:4em 0;
 }
+
+footer{
+  display:block;
+  height:20em;
+  background:$blue;
+}
+
 .contentWrapper{
   padding:1em;
   &.dark{
@@ -46,37 +53,6 @@ html{
   }
 }
 
-.contentWrapper.siteHeader{
-  // padding:0;
-  .contentWrapperInner{
-    padding:0;
-    text-align:center;
-    font-family:$display;
-    ul{
-      display:block;
-      width:100%;
-      text-align:center;
-    }
-    li{
-      display:inline;
-      // min-width:4em;
-      text-align:center;
-      margin-bottom:0;
-      margin-left:0;
-      padding-left:0;
-      margin-right:2em;
-      font-style:normal;
-      list-style:none;
-      border-left:0;
-      float:left;
-      &.current{
-        font-weight:$bold;
-        text-transform:uppercase;
-      }
-    }
-  }
-}
-
 
 em{font-style:italic;}
 strong{font-weight:900;}
@@ -96,3 +72,6 @@ code{
   color:darken($blue,20%);
   font-family:$code;
 }
+
+.output1{color:$red;}
+.output2{color:$green;}
