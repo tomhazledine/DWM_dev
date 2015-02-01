@@ -53,12 +53,16 @@
 @import "base.generic";
 @import "base.theme";
 @import "base.forms";
+@import "base.layout";
 
 // 05. OBJECTS
 @import "objects.mobileMenu";
+@import "objects.socialLinks";
+@import "objects.homeIntro";
 
 // 06. COMPONENTS
 @import "components.header";
+@import "components.footer";
 
 // 07. TRUMPS
 @import "trumps.utilities";

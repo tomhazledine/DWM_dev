@@ -1,0 +1,28 @@
+%mainWrap{
+	width:90%;
+  max-width:50em;
+  margin:0 auto;
+  // padding:4em 0;
+}
+
+
+// --- //
+
+
+.globalWrapper{
+	padding:1em 1em 0 1em;
+}
+
+.contentWrapper{
+	@extend %mainWrap;
+	background:$yellow;
+}
+
+.quart{
+	width:24%;
+	margin-right:1%;
+	float:left;
+	&.last{
+		margin-right:0;
+	}
+}

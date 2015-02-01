@@ -16,15 +16,6 @@ Run `gulp` to do work.
 
 ---
 
-## Post Hooks
+## Deployment notes
 
-To enable "post-commit" hook (to automatically copy "master" branch to "gh-pages" branch):
-
-Remember to run `chmod a+x .git/hooks/post-commit` to make the "post-commit" file executable.
-
-Add the following to "post-commit":
-
-    #!/bin/sh
-    git checkout gh-pages
-    git rebase master
-    git checkout master
+Remember to change `_config.yml` before deploying. `url` and `baseurl` are both different between live and local installations.

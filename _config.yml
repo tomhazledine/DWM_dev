@@ -10,6 +10,7 @@ baseurl: "/DWM_dev/" # the subpath of your site, e.g. /blog/
 twitter_username: jekyllrb
 github_username:  tomhazledine
 
+
 # Build settings
 markdown: kramdown
 kramdown:
@@ -22,21 +23,28 @@ exclude: [config.rb,
 navigation:
   - text: Home
     url: 
-  - text: About
-    url: about/
+  #- text: About
+  #  url: about/
+  - text: Work
+    url: work/
   - text: Contact
     url: contact/
-  - text: Our Work
-    url: work/
-  - text: Our Team
-    url: team/
+  #- text: Our Team
+  #  url: team/
 
 # Content settings
 dwmEmail: hello@wearedwm.com
 dwmTel: "01637 818271"
 dwmTelLink: "01637818271"
 dwmAddress:
-  - text: "Victoria Parade Buildings"
-  - text: "East Street"
-  - text: "Newquay"
-  - text: "TR7 1BG"
+  - addressLine: "DWM"
+  - addressLine: "Victoria Parade Buildings"
+  - addressLine: "East Street"
+  - addressLine: "Newquay"
+  - addressLine: "TR7 1BG"
+
+# Social Links
+twitter: "https://twitter.com/DigitalWebSW"
+facebook: "https://www.facebook.com/digitalwebmediasw"
+linkedin: "http://www.linkedin.com/company/digital-web-media"
+google: "https://plus.google.com/116804388365827001557"
