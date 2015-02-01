@@ -1,5 +1,5 @@
 html{
-  background:$cream;
+  background:$white;
   color:$dark;
   font-family:$text;
   line-height:1.6;
@@ -8,7 +8,7 @@ html{
 }
 body{
   min-height:100%;
-  background:$cream;
+  background:$white;
 }
 
 h1{font-size:3em;}
@@ -30,9 +30,9 @@ h1,h2,h3,h4,h5,h5{
 
 a{
   color:inherit;
-  transition:color;
+  transition:color,border;
   transition-duration:.2s;
-  &:hover{color:$orange;}
+  &:hover{color:$highlight;}
 }
 
 p{

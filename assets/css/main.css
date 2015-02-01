@@ -105,8 +105,8 @@ html {
   font-size: 100%; }
 
 html {
-  background: #f1f1f1;
-  color: #435963;
+  background: #f9fdfc;
+  color: #000000;
   font-family: 'Raleway', sans-serif;
   line-height: 1.6;
   min-height: 101%;
@@ -114,7 +114,7 @@ html {
 
 body {
   min-height: 100%;
-  background: #f1f1f1; }
+  background: #f9fdfc; }
 
 h1 {
   font-size: 3em; }
@@ -143,12 +143,12 @@ h1, h2, h3, h4, h5, h5 {
 
 a {
   color: inherit;
-  -webkit-transition: color;
-          transition: color;
+  -webkit-transition: color, border;
+          transition: color, border;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s; }
   a:hover {
-    color: #ff764d; }
+    color: #bbe5e1; }
 
 p {
   padding-bottom: 1em; }
@@ -183,11 +183,23 @@ input, textarea {
   margin-bottom: 1em;
   font-family: 'Raleway', sans-serif; }
 
+.contentWrapper, .homeIntroBlockInner {
+  width: 90%;
+  max-width: 40em;
+  margin: 0 auto; }
+
+.globalWrapper {
+  padding: 1em 1em 0 1em; }
+
+.contentWrapper {
+  background: #ffdc00; }
+
 .mobileNavToggle {
   outline: none;
   width: 1.8em;
   height: 1em;
-  float: right;
+  float: left;
+  margin-top: 0.5em;
   display: none;
   position: relative; }
   @media (max-width: 750px) {
@@ -201,7 +213,7 @@ input, textarea {
   top: 50%;
   margin-top: -2px;
   display: block;
-  background: #b5c0bc; }
+  background: #000000; }
   .navicon:after, .navicon:before {
     -webkit-transition: -webkit-transform, top, bottom;
             transition: transform, top, bottom;
@@ -212,7 +224,7 @@ input, textarea {
     position: absolute;
     width: 1.8em;
     height: 4px;
-    background: #b5c0bc; }
+    background: #000000; }
   .navicon:before {
     top: -0.5em; }
   .navicon:after {
@@ -256,44 +268,116 @@ input, textarea {
     padding: 1em;
     text-align: center; }
 
+.socialLink {
+  float: left;
+  margin-right: 1em;
+  height: 2em; }
+  .socialLink a {
+    display: block;
+    line-height: 1;
+    cursor: pointer;
+    padding-top: 0.5em;
+    border-bottom: 0.2em solid #000000; }
+    .socialLink a:hover {
+      border-bottom-color: #bbe5e1; }
+    .socialLink a:before {
+      font-family: 'iconFont'; }
+    .socialLink a.twitter:before {
+      content: "\e004"; }
+    .socialLink a.facebook:before {
+      content: "\e001"; }
+    .socialLink a.linkedIn:before {
+      content: "\e003"; }
+    .socialLink a.googlePlus:before {
+      content: "\e002"; }
+
+.homeIntroBlock {
+  background: #f0f9f8; }
+
+.homeIntroBlockInner {
+  text-align: center;
+  padding: 6em 0;
+  margin-bottom: -2em; }
+
+.introTitle {
+  font-family: 'BebasNeue', 'Raleway', sans-serif;
+  font-size: 1.5em; }
+
+.introHeadline {
+  font-size: 2.5em;
+  line-height: 1.3em; }
+
 .siteHeaderInner {
-  padding: 0 1em; }
+  padding: 0 0 1em 0; }
 
 .siteHeader {
   font-weight: 500;
   line-height: 1;
-  background: #f9fdfc; }
+  background: #f9fdfc;
+  border-bottom: 2px solid #000000;
+  position: relative; }
   .siteHeader a {
     text-decoration: none; }
 
-.siteHeader .navLogo {
-  width: 6em;
+.headerSocialLinks {
+  display: block;
+  width: 8em;
   float: left;
+  position: relative;
+  z-index: 2; }
+  @media (max-width: 750px) {
+    .headerSocialLinks {
+      display: none; } }
+
+.siteHeader .navLogo {
+  width: 4em;
+  text-align: right;
+  float: right;
   font-family: 'BebasNeue', 'Raleway', sans-serif;
-  font-weight: 400; }
+  font-size: 2em;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+  cursor: pointer; }
 
 .siteHeader .headerNav {
   float: left;
-  padding: 0; }
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  padding: 0.55em 0 0 0;
+  text-align: center; }
   @media (max-width: 750px) {
     .siteHeader .headerNav {
       display: none; } }
   .siteHeader .headerNav li {
+    font-size: 0.9em;
     display: inline-block;
-    padding: 0;
     margin: 0;
+    padding: 0 0.5em;
     float: left;
     text-align: left;
-    margin-right: 1em;
+    margin: 0 2em;
     font-style: normal;
     list-style: none;
     border-left: 0;
     float: none; }
-    .siteHeader .headerNav li.current a {
-      cursor: default;
-      color: #b5c0bc; }
-      .siteHeader .headerNav li.current a:hover {
-        color: #b5c0bc; }
+    .siteHeader .headerNav li.current {
+      position: relative; }
+      .siteHeader .headerNav li.current:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 0;
+        height: 0.1em;
+        width: 100%;
+        background: #000000; }
+      .siteHeader .headerNav li.current a {
+        cursor: default;
+        color: #000000; }
+        .siteHeader .headerNav li.current a:hover {
+          color: #000000; }
 
 .hidden {
   display: none !important;
@@ -319,12 +403,6 @@ input, textarea {
 
 .invisible {
   visibility: hidden; }
-
-.contentWrapperInner {
-  width: 90%;
-  max-width: 40em;
-  margin: 0 auto;
-  padding: 4em 0; }
 
 footer {
   display: block;

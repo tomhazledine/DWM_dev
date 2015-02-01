@@ -1,0 +1,19 @@
+%mainWrap{
+	width:90%;
+  max-width:40em;
+  margin:0 auto;
+  // padding:4em 0;
+}
+
+
+// --- //
+
+
+.globalWrapper{
+	padding:1em 1em 0 1em;
+}
+
+.contentWrapper{
+	@extend %mainWrap;
+	background:$yellow;
+}

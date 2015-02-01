@@ -3,9 +3,11 @@
     outline:none;
     width:1.8em;
     height:1em;
+    // margin:0 auto;
     // margin:.9em 0;
     // background:$cream;
-    float:right;
+    float:left;
+    margin-top:.5em;
     display:none;
     position:relative;
     // margin-top:.5em;
@@ -19,7 +21,7 @@
     top:50%;
     margin-top:-2px;
     display:block;
-    background:$greyDark;
+    background:$dark;
     &:after,&:before{
         transition:transform,top,bottom;
         transition-duration:.2s;
@@ -28,7 +30,7 @@
         position:absolute;
         width:1.8em;
         height:4px;
-        background:$greyDark;
+        background:$dark;
     }
     &:before{
         top:-.5em;

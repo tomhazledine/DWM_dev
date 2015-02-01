@@ -1,11 +1,14 @@
 {% include head.html %}
 
-<header class="siteHeader contentWrapper">
+<header class="siteHeader">
 	<div class="siteHeaderInner clearfix">
 
-		<div class="navLogo">
-			<span>{{ site.title }}</span>
-		</div>
+		<ul class="headerSocialLinks socialLinks clearfix">
+			<li class="socialLink"><a class="facebook"><span class="visuallyhidden">Facebook</span></a></li>
+			<li class="socialLink"><a class="twitter"><span class="visuallyhidden">Twitter</span></a></li>
+			<li class="socialLink"><a class="googlePlus"><span class="visuallyhidden">Google Plus</span></a></li>
+			<li class="socialLink"><a class="linkedIn"><span class="visuallyhidden">Linked In</span></a></li>
+		</ul>
 
 		<ul class="headerNav clearfix">
 			{% assign url = page.url|remove:'index.html' %}
@@ -16,6 +19,10 @@
 				</li>
 			{% endfor %}
 		</ul>
+
+		<a class="navLogo">
+			<span>{{ site.title }}</span>
+		</a>
 
 		<button class="mobileNavToggle"><span class="navicon"></span><span class="visuallyhidden">Menu</span></button>
 
