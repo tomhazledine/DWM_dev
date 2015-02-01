@@ -1,5 +1,49 @@
 </div>
 <footer>
+
+	<div class="footerInner clearfix">
+		
+		<ul class="footerSocialLinks quart socialLinks clearfix">
+			<li class="socialLink"><a class="facebook"><span class="visuallyhidden">Facebook</span></a></li>
+			<li class="socialLink"><a class="twitter"><span class="visuallyhidden">Twitter</span></a></li>
+			<li class="socialLink"><a class="googlePlus"><span class="visuallyhidden">Google Plus</span></a></li>
+			<li class="socialLink"><a class="linkedIn"><span class="visuallyhidden">Linked In</span></a></li>
+		</ul>
+
+		<div class="quart footerBlock">
+			<h3>Lost?</h3>
+			<ul class="footerNav clearfix">
+				{% for link in site.navigation %}
+					<li>
+					  <a href="{{ site.url }}{{ link.url }}">{{ link.text }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+		<div class="quart footerBlock">
+			<h3>Pop in &amp; see us!</h3>
+			{% for line in site.dwmAddress %}
+				<span class="addressLine">{{ line.addressLine }}</span>
+			{% endfor %}
+		</div>
+
+		<div class="quart footerBlock last">
+			<h3>Any Questions?</h3>
+			<span class="footerLink">Call us on <a href="tel:{{ site.dwmTelLink }}">{{ site.dwmTel }}</a></span>
+			<span class="footerLink">Email us at <a href="{{ site.dwmEmail }}">{{ site.dwmEmail }}</a></span>
+		</div>
+
+	</div>
+
+	<div class="footerStrip">
+		<div class="footerStripInner clearfix">
+			<span class="registered">Registered in England and Wales 08649718</span>
+			<span class="footerLogo"><span class="visuallyhidden">DWM</span></span>
+			<span class="copyright">&copy; 2015 Digital Web Media Ltd</span>
+		</div>
+	</div>
+
   {% include foot.html %}
 
 </footer>

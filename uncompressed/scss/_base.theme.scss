@@ -1,10 +1,9 @@
 html{
-  background:$white;
+  background:$dark;
   color:$dark;
   font-family:$text;
   line-height:1.6;
   min-height:101%;
-  background:$blue;
 }
 body{
   min-height:100%;
@@ -17,14 +16,14 @@ h3{font-size:1.6em;}
 h4{font-size:1.4em;}
 h5,h6{font-size:1em;}
 h1,h2,h3,h4,h5,h5{
-  padding-top:3em;
-  padding-top:3rem;
-  padding-bottom:1em;
-  padding-bottom:1rem;
-  // font-style:italic;
-  text-align:center;
+  // padding-top:3em;
+  // padding-top:3rem;
+  // padding-bottom:1em;
+  // padding-bottom:1rem;
+  // // font-style:italic;
+  // text-align:center;
   font-family:$display;
-  font-weight:700;
+  // font-weight:700;
   font-style:italic;
 }
 

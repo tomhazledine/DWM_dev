@@ -1,6 +1,6 @@
 %mainWrap{
 	width:90%;
-  max-width:40em;
+  max-width:50em;
   margin:0 auto;
   // padding:4em 0;
 }
@@ -16,4 +16,13 @@
 .contentWrapper{
 	@extend %mainWrap;
 	background:$yellow;
+}
+
+.quart{
+	width:24%;
+	margin-right:1%;
+	float:left;
+	&.last{
+		margin-right:0;
+	}
 }
