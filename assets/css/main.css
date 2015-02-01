@@ -1,18 +1,18 @@
 ::-moz-selection {
-  color: #fff;
-  background: #111; }
+  color: #f9fdfc;
+  background: #000000; }
 
 ::selection {
-  color: #fff;
-  background: #111; }
+  color: #f9fdfc;
+  background: #000000; }
 
 a::-moz-selection {
-  color: #111;
-  background: #fff; }
+  color: #000000;
+  background: #f9fdfc; }
 
 a::selection {
-  color: #111;
-  background: #fff; }
+  color: #000000;
+  background: #f9fdfc; }
 
 @font-face {
   font-family: 'iconFont';
@@ -63,8 +63,8 @@ font-family:'P22UndergroundW01-Mediu';
   font-family: inherit; }
 
 .button {
-  background: #30424a;
-  color: #fff;
+  background: #71c9c0;
+  color: #f9fdfc;
   padding: 0.5em 1em;
   border-radius: 4px;
   font-weight: 300;
@@ -105,16 +105,16 @@ html {
   font-size: 100%; }
 
 html {
-  background: #f6f6f3;
+  background: #f1f1f1;
   color: #435963;
   font-family: 'Raleway', sans-serif;
   line-height: 1.6;
   min-height: 101%;
-  background: #597887; }
+  background: #bbe5e1; }
 
 body {
   min-height: 100%;
-  background: #f6f6f3; }
+  background: #f1f1f1; }
 
 h1 {
   font-size: 3em; }
@@ -163,7 +163,7 @@ strong {
   font-weight: 900; }
 
 .button {
-  color: #fff;
+  color: #f9fdfc;
   margin-bottom: 1em; }
 
 code {
@@ -171,7 +171,7 @@ code {
   padding: 0em 0.2em;
   font-size: 1em;
   background: #ecefee;
-  color: #30424a;
+  color: #71c9c0;
   font-family: monospace; }
 
 input, textarea {
@@ -262,7 +262,7 @@ input, textarea {
 .siteHeader {
   font-weight: 500;
   line-height: 1;
-  background: #fff; }
+  background: #f9fdfc; }
   .siteHeader a {
     text-decoration: none; }
 
@@ -329,13 +329,13 @@ input, textarea {
 footer {
   display: block;
   height: 20em;
-  background: #597887; }
+  background: #bbe5e1; }
 
 .contentWrapper {
   padding: 1em 0; }
   .contentWrapper.dark {
-    background: #597887;
-    color: #f6f6f3; }
+    background: #bbe5e1;
+    color: #f1f1f1; }
 
 .output1 {
   color: #ff4136; }
