@@ -176,7 +176,7 @@ input, textarea {
   margin-bottom: 1em;
   font-family: 'Raleway', sans-serif; }
 
-.contentWrapper, .homeIntroBlockInner, .footerInner, .footerStripInner {
+.homeIntroBlockInner, .footerInner, .footerStripInner {
   width: 90%;
   max-width: 50em;
   margin: 0 auto; }
@@ -185,6 +185,8 @@ input, textarea {
   padding: 1em 1em 0 1em; }
 
 .contentWrapper {
+  max-width: 50em;
+  margin: 0 auto;
   background: #ffdc00; }
 
 .quart {
@@ -193,6 +195,14 @@ input, textarea {
   float: left; }
   .quart.last {
     margin-right: 0; }
+  @media (max-width: 750px) {
+    .quart {
+      width: 49%;
+      margin-bottom: 2em; } }
+  @media (max-width: 400px) {
+    .quart {
+      width: 100%;
+      margin-right: 0; } }
 
 .mobileNavToggle {
   outline: none;
@@ -386,7 +396,7 @@ footer {
   padding: 2em 0; }
   .footerInner h3 {
     font-size: 1.2em;
-    padding-bottom: 0.5em; }
+    padding-bottom: 1em; }
   .footerInner a {
     text-decoration: none; }
   .footerInner .footerBlock {

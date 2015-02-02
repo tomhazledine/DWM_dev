@@ -1,12 +1,13 @@
 footer{
 	background:$blueMid;
+	// max-width:90%;
 }
 .footerInner{
 	@extend %mainWrap;
 	padding:2em 0;
 	h3{
 		font-size:1.2em;
-		padding-bottom:.5em;
+		padding-bottom:1em;
 	}
 	a{text-decoration:none;}
 	.footerBlock{
