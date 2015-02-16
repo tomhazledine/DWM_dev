@@ -431,12 +431,17 @@ footer {
     font-size: 0.8em; }
   .footerStripInner .footerLogo {
     width: 3em;
-    height: 1em;
-    background: #ff4136;
+    height: 1.2em;
     position: absolute;
     top: 1em;
     left: 50%;
-    margin-left: -1.5em; }
+    margin-left: -1.5em;
+    text-align: center;
+    background-image: url("../images/dwmHat.png");
+    background-image: url("../images/dwmHat.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
   .footerStripInner .copyright {
     text-align: right;
     width: 50%;

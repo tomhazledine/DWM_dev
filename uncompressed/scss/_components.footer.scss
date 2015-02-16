@@ -1,66 +1,71 @@
 footer{
-	background:$blueMid;
-	// max-width:90%;
+    background:$blueMid;
+    // max-width:90%;
 }
 .footerInner{
-	@extend %mainWrap;
-	padding:2em 0;
-	h3{
-		font-size:1.2em;
-		padding-bottom:1em;
-	}
-	a{text-decoration:none;}
-	.footerBlock{
-		font-size:.8em;
-		line-height:1.4em;
-	}
+    @extend %mainWrap;
+    padding:2em 0;
+    h3{
+        font-size:1.2em;
+        padding-bottom:1em;
+    }
+    a{text-decoration:none;}
+    .footerBlock{
+        font-size:.8em;
+        line-height:1.4em;
+    }
 }
 
 .footerSocialLinks{
-	display:block;
+    display:block;
 }
 .addressLine{
-	display:block;
+    display:block;
 }
 .footerLink{
-	display:block;
-	a{
-		font-family:$display;
-		font-style:italic;
-	}
+    display:block;
+    a{
+        font-family:$display;
+        font-style:italic;
+    }
 }
 
 .footerStrip{
-	background:$dark;
-	color:$white;
+    background:$dark;
+    color:$white;
 }
 .footerStripInner{
-	@extend %mainWrap;
-	position:relative;
-	padding:1em 0;
-	span{
-		display:block;
-	}
-	.registered{
-		width:50%;
-		float:left;
-		padding-right:2em;
-		font-size:.8em;
-	}
-	.footerLogo{
-		width:3em;
-		height:1em;
-		background:$red;
-		position:absolute;
-		top:1em;
-		left:50%;
-		margin-left:-1.5em;
-	}
-	.copyright{
-		text-align:right;
-		width:50%;
-		float:right;
-		padding-left:2em;
-		font-size:.8em;
-	}
+    @extend %mainWrap;
+    position:relative;
+    padding:1em 0;
+    span{
+        display:block;
+    }
+    .registered{
+        width:50%;
+        float:left;
+        padding-right:2em;
+        font-size:.8em;
+    }
+    .footerLogo{
+        width:3em;
+        height:1.2em;
+        position:absolute;
+        top:1em;
+        left:50%;
+        margin-left:-1.5em;
+        text-align:center;
+        background-image:url("../images/dwmHat.png");
+        background-image:url("../images/dwmHat.svg");
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+    .copyright{
+        text-align:right;
+        width:50%;
+        float:right;
+        padding-left:2em;
+        font-size:.8em;
+    }
 }
