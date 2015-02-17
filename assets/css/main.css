@@ -47,7 +47,7 @@ font-family:'P22UndergroundW01-Mediu';
 .contentBlock a, .quoteBlock .contentImage, .clearfix {
   zoom: 1; }
 
-.quoteBlock .contentImage .contentImageSmall {
+.quoteBlock .contentImage .contentImageSmall, .quoteBlock .clientLogo {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -531,10 +531,10 @@ input, textarea {
 .quoteBlock .clientLogo {
   width: 100%;
   padding-bottom: 3em;
-  background: #ffdc00;
   position: absolute;
   bottom: 1em;
-  left: 0em; }
+  left: 0em;
+  background-size: contain; }
 
 .siteHeaderInner {
   padding: 0 0 1em 0; }

@@ -1,0 +1,29 @@
+{% assign featuredQuoteCount = 0 %}
+
+{% for post in site.categories["work"] %}
+    {% if post.featured == true %}
+        {% if post.hasquote == true %}
+            {% if featuredQuoteCount < 2 %}
+
+                <article class="contentBlock quoteBlock half {% if featuredQuoteCount == 1 %}right{% endif %}">
+                    <a href="{{ post.url }}">
+                        <div class="contentImage">
+                            <div class="contentImageMask"></div>
+                            <div class="contentImageSmall" style="background-image:url('{{ site.url }}assets/images/workImages/{{ post.heroimg }}');"></div>
+                            <div class="contentImageSmall" style="background-image:url('{{ site.url }}assets/images/workImages/{{ post.heroimg }}');"></div>
+                        </div>
+
+                        <div class="contentCaption">
+                            <h2>{{ post.quotecite }}</h2>
+                            <h3>{{ post.client }}</h3>
+                            <blockquote>{{ post.quote }}</blockquote>
+                            <div class="clientLogo" style="background-image:url('{{ site.url }}assets/images/workImages/{{ post.clientlogo }}');"></div>
+                        </div>
+                    </a>
+                </article>
+
+                {% assign featuredQuoteCount = featuredQuoteCount | plus:1 %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
