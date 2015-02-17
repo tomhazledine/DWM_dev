@@ -9,3 +9,10 @@
 %cf:after{clear:both;}
 // For IE 6/7 only – Include this rule to trigger hasLayout and contain floats.
 %cf{zoom:1;}
+
+// Image BG
+%imgBg{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}

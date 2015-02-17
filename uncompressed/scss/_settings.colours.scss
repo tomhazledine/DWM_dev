@@ -39,6 +39,18 @@ $blueMid:#e7f6f4;
 $blueLight:#f0f9f8;
 $blue:#bbe5e1;
 $black:#000000;
+// Reworked Colours
+$bannerBG:#e5f4f2;
+$mainBG:#bce3e0;
+$mainBGmid:#dcf0ed;//#e5f4f2;
+$mainBGlight:#e5f4f2;
+$textColour:#94d1cc;
+$iconColour:#a1d9d4;
+$dropDown:rgba(#bce3e0, .8);
+
+$blueMid:$mainBGmid;
+$blueLight:$mainBGlight;
+$blue:$mainBG;
 
 $dark:$black;
 $highlight:$blue;
