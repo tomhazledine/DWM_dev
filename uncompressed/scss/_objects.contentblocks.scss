@@ -143,9 +143,11 @@
     .clientLogo{
         width:100%;
         padding-bottom:3em;
-        background:$yellow;
+        // background:$yellow;
         position:absolute;
         bottom:1em;
         left:0em;
+        @extend %imgBg;
+        background-size:contain;
     }
 }
