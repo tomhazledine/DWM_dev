@@ -4,26 +4,124 @@ layout: default
 
 <div class="homeIntroBlock">
     <div class="homeIntroBlockInner">
+        <span class="ornament hat"></span>
         <div class="introTitle">For your eyes only</div>
+        <span class="ornament swirl"></span>
         <h1 class="introHeadline">Hello. We are DWM. What can we do for you?</h1>
     </div>
 </div>
 
 <div class="contentWrapper">
-    <div class="contentWrapperInner">
+    <div class="contentWrapperInner clearfix">
 
-        {% capture homeContent %}{% include homeContent.md %}{% endcapture %}
-        {{ homeContent | markdownify }}
+        <article class="homeContentBlock half">
 
-        <button class="button">This is a button</button>
+            <h2>Introduction Title</h2>
+            <h3>Sub-heading</h3>
 
-        {% capture lorem %}{% include lorem.md %}{% endcapture %}
-        {{ lorem | markdownify }}
+            <div class="columnedBlock">
+                <p>This is some regular body copy. Most of the text on the site will look like this. It will often contain <strong>text that is bold</strong>, as well as <a href="">plenty of links</a> and stuff <em>that is emphasised</em>.</p>
+
+                <p>There will also be plenty of paragraphs. Talking of which, here's a second paragraph. Isn't it lovely! This one will have a block of numbers: 0123456789. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, id, adipisci! Aliquam, consectetur, esse?</p>
+            </div>
+
+            <!-- {% capture homeContent %}{% include homeContent.md %}{% endcapture %}
+            {{ homeContent | markdownify }} -->
+
+        </article>
+
+        <article class="contentBlock workExample half right">
+            <a href="">
+                <div class="contentImage">
+                    <div class="contentImageMask"></div>
+                </div>
+
+                <div class="contentCaption">
+                    <h2>Hibiscus Surf School</h2>
+                    <h3>Branding, Identity, Build</h3>
+                    <p>Mini description of work if necessary.</p>
+                </div>
+            </a>
+        </article>
+
+        <article class="contentBlock workExample trio left">
+            <a href="">
+                <div class="contentImage">
+                    <div class="contentImageMask"></div>
+                </div>
+
+                <div class="contentCaption">
+                    <h2>Hibiscus Surf School</h2>
+                    <h3>Branding, Identity, Build</h3>
+                    <p>Mini description of work if necessary.</p>
+                </div>
+            </a>
+        </article>
+        <article class="contentBlock workExample trio">
+            <a href="">
+                <div class="contentImage">
+                    <div class="contentImageMask"></div>
+                </div>
+
+                <div class="contentCaption">
+                    <h2>Hibiscus Surf School</h2>
+                    <h3>Branding, Identity, Build</h3>
+                    <p>Mini description of work if necessary.</p>
+                </div>
+            </a>
+        </article>
+        <article class="contentBlock workExample trio right">
+            <a href="">
+                <div class="contentImage">
+                    <div class="contentImageMask"></div>
+                </div>
+
+                <div class="contentCaption">
+                    <h2>Hibiscus Surf School</h2>
+                    <h3>Branding, Identity, Build</h3>
+                    <p>Mini description of work if necessary.</p>
+                </div>
+            </a>
+        </article>
+
+        <article class="contentBlock quoteBlock half left">
+            <a href="">
+                <div class="contentImage">
+                    <div class="contentImageMask"></div>
+                    <div class="contentImageSmall"></div>
+                    <div class="contentImageSmall"></div>
+                </div>
+
+                <div class="contentCaption">
+                    <h2>Richard Lemon</h2>
+                    <h3>Outback Trading</h3>
+                    <blockquote>Our business has more than doubles over the last two years. The website now represents over 80% of our turnover</blockquote>
+                    <div class="clientLogo"></div>
+                </div>
+            </a>
+        </article>
+        <article class="contentBlock quoteBlock half right">
+            <a href="">
+                <div class="contentImage">
+                    <div class="contentImageMask"></div>
+                    <div class="contentImageSmall"></div>
+                    <div class="contentImageSmall"></div>
+                </div>
+
+                <div class="contentCaption">
+                    <h2>Hibiscus Surf School</h2>
+                    <h3>Branding, Identity, Build</h3>
+                    <p>Mini description of work if necessary.</p>
+                </div>
+            </a>
+        </article>
+
+        <!-- <button class="button">This is a button</button> -->
 
     </div>
 </div>
 
-<div class="contentWrapper dark">
+<!-- <div class="contentWrapper dark">
     <div class="contentWrapperInner">
 
         {% capture lorem %}{% include lorem.md %}{% endcapture %}
@@ -50,4 +148,4 @@ layout: default
         {{ lorem | markdownify }}
 
     </div>
-</div>
+</div> -->

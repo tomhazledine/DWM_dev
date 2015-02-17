@@ -1,0 +1,151 @@
+.contentBlock{
+    margin-bottom:1em;
+    h3{
+        color:$textColour;
+        font-weight:light;
+        column-span:all;
+    }
+    a{
+        display:block;
+        text-decoration:none;
+        cursor:pointer;
+        @extend %cf;
+        transition:background;
+        transition-duration:.3s;
+        // *{
+        //     transition:color,background,opacity;
+        //     transition-duration:.3s;
+        // }
+    }
+}
+
+.homeContentBlock{
+    background:$blueMid;
+    padding:1em 2em;
+    h3{
+        padding:.5em 0 2em 0;
+    }
+}
+
+.contentImage{
+    width:100%;
+    padding-bottom:60%;
+    background:$grey;
+    margin-bottom:1em;
+    background-image:url('../images/placeholder.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+}
+.contentImageMask{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:$dropDown;
+    opacity:0;
+    transition:opacity;
+    transition-duration:.3s;
+    &:after{
+        display:block;
+        content:"\e006";
+        font-family:$icons;
+        width:2em;
+        height:2em;
+        border-radius:1em;
+        background:rgba($white,.5);
+        text-align:center;
+        line-height:1;
+        padding-top:.5em;
+        font-size:4em;
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-top:-1em;
+        margin-left:-1em;
+        color:$black;
+    }
+}
+.contentBlock a:hover{
+    .contentImageMask{
+        opacity:1;
+    }
+    h2,blockquote{color:$black;}
+}
+
+.contentBlock.workExample a:hover{
+    h2,h3,p,.contentCaption:after{
+        border-bottom-color:$blueMid;
+        color:$blueMid;
+    }
+}
+
+.contentCaption{
+    padding-right:3em;
+    position:relative;
+    &:after{
+        display:block;
+        content:"\e006";
+        font-family:$icons;
+        color:$iconColour;
+        position:absolute;
+        top:0;
+        right:0;
+        font-size:2em;
+    }
+}
+
+.quoteBlock{
+    a{
+        // display:block;
+        .contentCaption{background:$blue;}
+        &:hover .contentCaption{background:$blueMid;}
+    }
+    .contentImage{
+        width:49%;
+        padding-bottom:0;
+        min-height:25em;
+        // padding-bottom:100%;
+        float:right;
+        margin-bottom:0;
+        background:none;
+        @extend %cf;
+
+        .contentImageSmall{
+            @extend %imgBg;
+            display:block;
+            width:100%;
+            height:12em;
+            margin-bottom:1em;
+            background-image:url('../images/placeholder2.jpg');
+            &:last-of-type{
+                // background:$green;
+                margin-bottom:0;
+                background-image:url('../images/placeholder3.jpg');
+                // @extend %imgBg;
+            }
+        }
+    }
+    .contentCaption{
+        width:49%;
+        float:left;
+        min-height:25em;
+        background:none;
+        padding:1em;
+        padding-right:1em;
+        padding-bottom:5em;
+        position:relative;
+        &:after{display:none;}
+        h3{color:$black;}
+    }
+    .clientLogo{
+        width:100%;
+        padding-bottom:3em;
+        background:$yellow;
+        position:absolute;
+        bottom:1em;
+        left:0em;
+    }
+}

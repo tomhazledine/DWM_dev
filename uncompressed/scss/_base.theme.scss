@@ -25,17 +25,30 @@ h1,h2,h3,h4,h5,h5{
   font-family:$display;
   // font-weight:700;
   font-style:italic;
+  line-height:1.2;
+  transition:color,border;
+  // transition-duration:.3s;
+}
+
+h2{
+  font-family:$brand;
+  font-style:normal;
+  border-bottom:.1em solid $black;
+  display:inline-block;
+  line-height:1;
 }
 
 a{
   color:inherit;
   transition:color,border;
-  transition-duration:.2s;
+  // transition-duration:.3s;
   &:hover{color:$highlight;}
 }
 
 p{
   padding-bottom:1em;
+  transition:color;
+  // transition-duration:.3s;
 }
 li{
   list-style:none;
@@ -44,6 +57,29 @@ li{
 
 em{font-style:italic;}
 strong{font-weight:900;}
+
+blockquote{
+  padding-bottom:2em;
+  position:relative;
+  &:before,&:after{
+    font-family:$display;
+    font-style:italic;
+    line-height:1rem;
+    font-size:3em;
+    position:relative;
+  }
+  &:before{
+    content:"“";
+    padding-right:.5em;
+    top:.5em;
+  }
+  &:after{
+    content:"”";
+    position:absolute;
+    bottom:0;
+    right:0;
+  }
+}
 
 .button{
   @extend %buttonReset;
