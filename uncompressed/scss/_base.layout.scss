@@ -15,8 +15,9 @@
 
 .contentWrapper{
     // @extend %mainWrap;
-    max-width:60em;
+    max-width:70em;
     margin:0 auto;
+    font-size:.8em;
     // background:$yellow;
 }
 
@@ -26,7 +27,7 @@
     &.right{
         float:right;
     }
-    @include bp(d3){
+    @include bp(d2){
         width:100%;
         float:none;
     }
@@ -45,6 +46,10 @@
     }
     &.right{
         margin-right:0;
+    }
+    @include bp(d2){
+        width:100%;
+        float:none;
     }
 }
 

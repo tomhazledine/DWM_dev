@@ -219,15 +219,16 @@ input, textarea {
   padding: 1em 1em 0 1em; }
 
 .contentWrapper {
-  max-width: 60em;
-  margin: 0 auto; }
+  max-width: 70em;
+  margin: 0 auto;
+  font-size: 0.8em; }
 
 .half {
   width: 49%;
   float: left; }
   .half.right {
     float: right; }
-  @media (max-width: 400px) {
+  @media (max-width: 750px) {
     .half {
       width: 100%;
       float: none; } }
@@ -240,6 +241,10 @@ input, textarea {
     clear: both; }
   .trio.right {
     margin-right: 0; }
+  @media (max-width: 750px) {
+    .trio {
+      width: 100%;
+      float: none; } }
 
 .quart {
   width: 24%;
@@ -368,6 +373,10 @@ input, textarea {
   text-align: center;
   padding: 6em 0;
   margin-bottom: -3em; }
+  @media (max-width: 750px) {
+    .homeIntroBlockInner {
+      padding: 2em 1em;
+      margin-bottom: 1em; } }
 
 .introTitle {
   font-family: 'BebasNeue', 'Raleway', sans-serif;
@@ -377,6 +386,10 @@ input, textarea {
   font-size: 2.5em;
   line-height: 1.3em;
   padding: 1em; }
+  @media (max-width: 750px) {
+    .introHeadline {
+      font-size: 1.5em;
+      padding: 2em 0 0 0; } }
 
 .ornament {
   display: block;
@@ -427,9 +440,13 @@ input, textarea {
 
 .homeContentBlock {
   background: #dcf0ed;
-  padding: 1em 2em; }
+  padding: 2em 3em; }
   .homeContentBlock h3 {
     padding: 0.5em 0 2em 0; }
+  @media (max-width: 750px) {
+    .homeContentBlock {
+      margin-bottom: 1em;
+      padding: 2em 1em; } }
 
 .contentImage {
   width: 100%;
@@ -515,19 +532,27 @@ input, textarea {
     .quoteBlock .contentImage .contentImageSmall:last-of-type {
       margin-bottom: 0;
       background-image: url('../images/placeholder3.jpg'); }
+  @media (max-width: 750px) {
+    .quoteBlock .contentImage {
+      display: none; } }
 .quoteBlock .contentCaption {
   width: 49%;
   float: left;
   min-height: 25em;
   background: none;
-  padding: 1em;
-  padding-right: 1em;
+  padding: 1em 2em;
+  padding-right: 2em;
   padding-bottom: 5em;
   position: relative; }
   .quoteBlock .contentCaption:after {
     display: none; }
   .quoteBlock .contentCaption h3 {
     color: #000000; }
+  @media (max-width: 750px) {
+    .quoteBlock .contentCaption {
+      width: 100%;
+      min-height: 0;
+      padding: 1em 1em 5em 1em; } }
 .quoteBlock .clientLogo {
   width: 100%;
   padding-bottom: 3em;

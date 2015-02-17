@@ -4,10 +4,12 @@ layout: default
 
 <div class="homeIntroBlock">
     <div class="homeIntroBlockInner">
-        <span class="ornament hat"></span>
-        <div class="introTitle">For your eyes only</div>
-        <span class="ornament swirl"></span>
-        <h1 class="introHeadline">Hello. We are DWM. What can we do for you?</h1>
+        {% for post in site.categories["homeheader"] limit:1 %}
+            <span class="ornament hat"></span>
+            <div class="introTitle">{{ post.title }}</div>
+            <span class="ornament swirl"></span>
+            <h1 class="introHeadline">{{ post.subtitle }}</h1>
+        {% endfor %}
     </div>
 </div>
 

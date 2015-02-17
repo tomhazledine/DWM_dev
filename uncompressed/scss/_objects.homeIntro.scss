@@ -6,6 +6,10 @@
 	text-align:center;
 	padding:6em 0;
 	margin-bottom:-3em;
+	@include bp(d2){
+		padding:2em 1em;
+		margin-bottom:1em;
+	}
 }
 
 .introTitle{
@@ -17,4 +21,8 @@
 	font-size:2.5em;
 	line-height:1.3em;
     padding:1em;
+    @include bp(d2){
+    	font-size:1.5em;
+    	padding:2em 0 0 0;
+    }
 }
