@@ -21,9 +21,13 @@
 
 .homeContentBlock{
     background:$blueMid;
-    padding:1em 2em;
+    padding:2em 3em;
     h3{
         padding:.5em 0 2em 0;
+    }
+    @include bp(d2){
+        margin-bottom:1em;
+        padding:2em 1em;
     }
 }
 
@@ -127,18 +131,24 @@
                 // @extend %imgBg;
             }
         }
+        @include bp(d2){display:none;}
     }
     .contentCaption{
         width:49%;
         float:left;
         min-height:25em;
         background:none;
-        padding:1em;
-        padding-right:1em;
+        padding:1em 2em;
+        padding-right:2em;
         padding-bottom:5em;
         position:relative;
         &:after{display:none;}
         h3{color:$black;}
+        @include bp(d2){
+            width:100%;
+            min-height:0;
+            padding:1em 1em 5em 1em;
+        }
     }
     .clientLogo{
         width:100%;
