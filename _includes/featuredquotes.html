@@ -6,7 +6,7 @@
             {% if featuredQuoteCount < 2 %}
 
                 <article class="contentBlock quoteBlock half {% if featuredQuoteCount == 1 %}right{% endif %}">
-                    <a href="{{ post.url }}">
+                    <a href="{{ site.url }}{{ post.url }}">
                         <div class="contentImage">
                             <div class="contentImageMask"></div>
                             <div class="contentImageSmall" style="background-image:url('{{ site.url }}assets/images/workImages/{{ post.heroimg }}');"></div>

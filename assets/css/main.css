@@ -498,10 +498,6 @@ input, textarea {
 .contentBlock a:hover h2, .contentBlock a:hover blockquote {
   color: #000000; }
 
-.contentBlock.workExample a:hover h2, .contentBlock.workExample a:hover h3, .contentBlock.workExample a:hover p, .contentBlock.workExample a:hover .contentCaption:after {
-  border-bottom-color: #dcf0ed;
-  color: #dcf0ed; }
-
 .contentCaption {
   padding-right: 3em;
   position: relative; }
