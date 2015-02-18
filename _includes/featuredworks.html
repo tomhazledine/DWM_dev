@@ -1,8 +1,7 @@
 {% assign featuredPostCount = 0 %}
 
-{% for post in site.categories["work"] offset:1 %}
+{% for post in site.categories["work"] offset:1 limit:4 %}
     {% if post.featured == true %}
-        {% if featuredPostCount < 3 %}
 
             <article class="contentBlock workExample trio {% if featuredPostCount == 0 %}left{% endif %} {% if featuredPostCount == 2 %}right{% endif %}">
                 <a href="{{ post.url }}">
@@ -19,7 +18,6 @@
             </article>
 
             {% assign featuredPostCount = featuredPostCount | plus:1 %}
-            
-        {% endif %}
+
     {% endif %}
 {% endfor %}

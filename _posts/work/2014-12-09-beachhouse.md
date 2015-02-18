@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: workSingle
 title:  "Beach House, Yo!"
 client: "The Beach House Company"
 subheading: "Even more crazy times"
@@ -7,6 +7,9 @@ minidescription: "A short description"
 date:   2014-12-09
 categories: work
 featured: true
+
+relatedto: realfoodbox
+relatedslug: beachhouse
 
 heroimg: "placeholder2.jpg"
 clientlogo: "placeholder2.jpg"
