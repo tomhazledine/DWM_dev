@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: workSingle
 title:  "Featured Work!"
 client: "Not Hibiscus School"
 subheading: "Wat?! Crazy times"

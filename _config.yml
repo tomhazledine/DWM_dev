@@ -4,9 +4,9 @@ email: tom@digitalwebmedia.co.uk
 permalink: /:title
 description: > # this means to ignore newlines until "baseurl:"
   Testing typography and deployment solutions for the new Digital Web Media website.
-url: "http://dwm.dev/" # Local
-#url: "http://tomhazledine.github.io/DWM_dev/" # the base hostname & protocol for your site
-#baseurl: "/DWM_dev/" # the subpath of your site, e.g. /blog/
+# url: "http://dwm.dev/" # Local
+url: "http://tomhazledine.github.io/DWM_dev/" # the base hostname & protocol for your site
+baseurl: "/DWM_dev/" # the subpath of your site, e.g. /blog/
 twitter_username: jekyllrb
 github_username:  tomhazledine
 

@@ -697,6 +697,33 @@ footer {
     padding-left: 2em;
     font-size: 0.8em; }
 
+.workExamplesIntro {
+  padding-top: 2em;
+  margin-bottom: 1em; }
+  .workExamplesIntro h1 {
+    padding-bottom: 1em;
+    padding-bottom: 1rem; }
+
+.excerpt {
+  font-size: 1.4em;
+  padding: 1em 0;
+  padding: 1rem 0; }
+
+.workSingleHeroImage {
+  padding-bottom: 40%; }
+
+.singleWorkCaseStudy {
+  padding: 2em 3em;
+  background: #e5f4f2; }
+  .singleWorkCaseStudy > div {
+    padding-top: 2em; }
+
+.relatedContent {
+  margin-top: 6em; }
+
+.singleWorkExample h3 {
+  color: #bce3e0; }
+
 .hidden {
   display: none !important;
   visibility: hidden; }

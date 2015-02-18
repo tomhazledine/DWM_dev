@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: workSingle
 title:  "Real Food Box"
 client: "Real Food Box"
 subheading: "Some undefined stuff for Errol"
@@ -7,6 +7,9 @@ minidescription: "This dragged on and on and on"
 date:   2015-01-01
 categories: work
 featured: true
+
+relatedto: beachhouse
+relatedslug: realfoodbox
 
 heroimg: "placeholder.jpg"
 clientlogo: "placeholder.jpg"

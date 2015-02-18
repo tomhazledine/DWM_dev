@@ -1,0 +1,29 @@
+.excerpt{
+    font-size:1.4em;
+    padding:1em 0;
+    padding:1rem 0;
+}
+
+.workSingleHeroImage{
+    padding-bottom:40%;
+}
+
+.singleWorkExampleContent{
+
+}
+
+.singleWorkCaseStudy{
+    padding:2em 3em;
+    background:$blueLight;
+    > div{padding-top:2em;}
+}
+
+.relatedContent{
+    margin-top:6em;
+}
+
+.singleWorkExample{
+    h3{
+        color:$blue;
+    }
+}
