@@ -4,7 +4,7 @@
     {% if post.featured == true %}
 
             <article class="contentBlock workExample trio {% if featuredPostCount == 0 %}left{% endif %} {% if featuredPostCount == 2 %}right{% endif %}">
-                <a href="{{ post.url }}">
+                <a href="{{ site.url }}{{ post.url }}">
                     <div class="contentImage" style="background-image:url('{{ site.url }}assets/images/workImages/{{ post.heroimg }}');">
                         <div class="contentImageMask"></div>
                     </div>
