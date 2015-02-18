@@ -3,23 +3,58 @@ layout: default
 ---
 <div class="contentWrapper">
     <div class="contentWrapperInner">
+        
+        <section class="workExamplesIntro">
+            <header class="post-header">
+                <h1 class="post-title">{{ page.title }}</h1>
+            </header>
 
-        <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-        </header>
-
-        <article class="post-content">
             {{ content }}
+            <br>
+        </section>
 
-            <ul>
+        <section class="workExamples clearfix">
+            {% assign featuredPostCount = 0 %}
+
             {% for post in site.categories["work"] %}
-                <li>
-                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                </li>
-            {% endfor %}
-            </ul>
 
-        </article>
+                <article class="contentBlock workExample
+                    {% if featuredPostCount == 0 %}
+                        half left
+                    {% elsif featuredPostCount == 1 %}
+                        half right
+                    {% elsif featuredPostCount == 2 %}
+                        trio left
+                    {% elsif featuredPostCount == 4 %}
+                        trio right
+                    {% elsif featuredPostCount == 5 %}
+                        full
+                    {% elsif featuredPostCount == 6 %}
+                        half left
+                    {% elsif featuredPostCount == 7 %}
+                        half right
+                    {% else %}
+                        trio
+                    {% endif %}
+                ">
+                    <a href="{{ post.url }}">
+                        <div class="contentImage" style="background-image:url('{{ site.url }}assets/images/workImages/{{ post.heroimg }}');">
+                            <div class="contentImageMask"></div>
+                        </div>
+
+                        <div class="contentCaption">
+                            <h2>{{ post.client }}</h2>
+                            <h3>{{ post.subheading }}</h3>
+                            <p>{{ post.minidescription }}</p>
+                        </div>
+                    </a>
+                </article>
+
+                {% assign featuredPostCount = featuredPostCount | plus:1 %}
+
+            {% endfor %}
+
+        </section>
 
     </div>
 </div>

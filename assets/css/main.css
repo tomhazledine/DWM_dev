@@ -223,6 +223,9 @@ input, textarea {
   margin: 0 auto;
   font-size: 0.8em; }
 
+.full {
+  width: 100%; }
+
 .half {
   width: 49%;
   float: left; }
