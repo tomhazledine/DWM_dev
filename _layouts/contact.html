@@ -1,6 +1,28 @@
 ---
 layout: default
 ---
+
+<section class="mapSettings">
+    <p class='propMapLat fallback'>50.2600</p>
+    <p class='propMapLng fallback'>-5.0510</p>
+    <p class="propMapLatOffset">0</p>
+    <p class="propMapLngOffset">0</p>
+    <p class="mapZoom">15</p>
+</section>
+
+<div id="mapCanvas" class="mapCanvas">
+    <div class="contactIntroBlockInner">
+        {% for post in site.categories["contactheader"] limit:1 %}
+            <div class="contactMarker">
+                <span class="ornament hat"></span>
+                <div class="introTitle">{{ post.title }}</div>
+                <span class="ornament swirl"></span>
+                <h1 class="introHeadline">{{ post.subtitle }}</h1>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
 <div class="contentWrapper">
     <div class="contentWrapperInner">
 
