@@ -10318,7 +10318,7 @@ var mapLat = mapLatRaw;
 var mapLng = mapLngRaw;
 var mapOffsetXRaw = parseFloat($('.propMapLatOffset').text());
 var mapOffsetYRaw = parseFloat($('.propMapLngOffset').text());
-var customMarkerIcon = '/wp-content/themes/penvale/assets/images/paw.png';
+var customMarkerIcon = '';//'/wp-content/themes/penvale/assets/images/paw.png';
 
 
 var mapStyle = [
@@ -10390,6 +10390,12 @@ var mapStyle = [
         {"lightness":-25},
         {"saturation":-97}
       ]
+    },
+    {
+      "featureType":"poi",
+      "stylers":[
+        {"visibility":"off"}
+      ]
     }
   ];
 
@@ -10448,15 +10454,15 @@ if(mapBox.length){
     var marker = new google.maps.Marker({
       position: currentTarget,
       map: map,
-      // icon: customMarkerIcon
+      icon: customMarkerIcon
     });
 
     google.maps.event.addListener(map, 'center_changed', function() {
       // 3 seconds after the center of the map has changed, pan back to the
       // marker.
-      window.setTimeout(function() {
-        map.panTo(marker.getPosition());
-      }, 3000);
+      // window.setTimeout(function() {
+        map.panTo(currentCentre);
+      // }, 3000);
     });
 
     // // Set the Street View panorama

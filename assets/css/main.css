@@ -68,10 +68,10 @@ font-family:'P22UndergroundW01-Mediu';
   font-family: inherit; }
 
 .button {
-  background: #74c5be;
-  color: #f9fdfc;
+  background: #bce3e0;
+  color: #000000;
   padding: 0.5em 1em;
-  border-radius: 4px;
+  border-radius: 2px;
   font-weight: 300;
   line-height: 1;
   font-size: 1.4em;
@@ -84,9 +84,9 @@ font-family:'P22UndergroundW01-Mediu';
   font-style: italic;
   letter-spacing: 0.1em; }
   .button:hover {
-    background: #ff764d; }
+    background: #98d4cf; }
   .button:active {
-    background: #ff4c1a; }
+    background: #74c5be; }
   .button:focus {
     outline: none; }
 
@@ -117,6 +117,7 @@ html {
   min-height: 101%; }
 
 body {
+  min-width: 300px;
   min-height: 100%;
   background: #f9fdfc; }
 
@@ -208,7 +209,13 @@ input, textarea {
   border: 0;
   padding: 1em;
   margin-bottom: 1em;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  background: #e5f4f2;
+  color: #000000; }
+  input:focus, textarea:focus {
+    outline: none;
+    -webkit-box-shadow: inset #bce3e0 0 0 0 0.2em;
+            box-shadow: inset #bce3e0 0 0 0 0.2em; }
 
 .homeIntroBlockInner, .footerInner, .footerStripInner {
   width: 90%;
@@ -226,11 +233,16 @@ input, textarea {
 .full {
   width: 100%; }
 
+.left {
+  clear: both; }
+
 .half {
   width: 49%;
-  float: left; }
+  float: left;
+  margin-right: 1%; }
   .half.right {
-    float: right; }
+    float: right;
+    margin-right: 0; }
   @media (max-width: 750px) {
     .half {
       width: 100%;
@@ -240,8 +252,6 @@ input, textarea {
   width: 32%;
   margin-right: 2%;
   float: left; }
-  .trio.left {
-    clear: both; }
   .trio.right {
     margin-right: 0; }
   @media (max-width: 750px) {
@@ -446,7 +456,8 @@ input, textarea {
 
 .homeContentBlock {
   background: #dcf0ed;
-  padding: 2em 3em; }
+  padding: 2em 3em;
+  margin-bottom: 1em; }
   .homeContentBlock h3 {
     padding: 0.5em 0 2em 0; }
   @media (max-width: 750px) {
@@ -610,6 +621,13 @@ input, textarea {
   width: 100%;
   padding-bottom: 40%; }
 
+.contactForm {
+  padding: 2em 0; }
+  .contactForm .button {
+    display: block;
+    width: 100%;
+    color: #000000; }
+
 .siteHeaderInner {
   padding: 0 0 1em 0; }
 
@@ -769,6 +787,72 @@ footer {
 
 .singleWorkExample h3 {
   color: #bce3e0; }
+
+.contactMapWrapper {
+  width: 100%;
+  margin-bottom: -4em;
+  position: relative;
+  height: 40em; }
+  .contactMapWrapper .mapWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; }
+    .contactMapWrapper .mapWrapper .mapCanvas {
+      padding-bottom: 0;
+      height: 40em; }
+  .contactMapWrapper .contactIntroBlockInner {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    text-align: center; }
+
+.contactMarker {
+  width: 16em;
+  height: 16em;
+  background: #bce3e0;
+  border-radius: 50% 50% 50% 0;
+  overflow: hidden;
+  margin: 5em auto 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%; }
+
+.contactMarkerInner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  padding-top: 2em; }
+  .contactMarkerInner h1 {
+    padding: 0 0.5em 0 0.5em;
+    font-size: 2em; }
+
+.contentWrapper.contact {
+  position: relative;
+  z-index: 4; }
+
+.sidebarBlock {
+  padding: 0 0 1em 0; }
+  .sidebarBlock h3 {
+    padding-bottom: 1em; }
+  .sidebarBlock .addressline {
+    display: block; }
+
+.twitterFeed {
+  background: #dcf0ed;
+  padding: 1em;
+  margin-top: 1em; }
 
 .hidden {
   display: none !important;
