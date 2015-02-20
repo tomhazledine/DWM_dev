@@ -273,6 +273,18 @@ input, textarea {
     .quart {
       width: 100%;
       margin-right: 0; } }
+  @media (max-width: 750px) {
+    .quart.dualSidebar {
+      width: 100%; } }
+
+@media (max-width: 750px) {
+  .sidebarBlock {
+    width: 48%;
+    float: left; }
+    .sidebarBlock:nth-of-type(2n) {
+      float: right; }
+    .sidebarBlock:nth-of-type(2n+1) {
+      clear: both; } }
 
 .columnedBlock {
   -webkit-column-count: 2;
@@ -838,21 +850,32 @@ footer {
     padding: 0 0.5em 0 0.5em;
     font-size: 2em; }
 
+@media (max-width: 750px) {
+  .contentFormWrapper {
+    clear: both; } }
+
 .contentWrapper.contact {
   position: relative;
   z-index: 4; }
 
 .sidebarBlock {
-  padding: 0 0 1em 0; }
+  padding: 0 0 4em 0; }
+  .sidebarBlock a {
+    font-size: 1.4em; }
   .sidebarBlock h3 {
     padding-bottom: 1em; }
   .sidebarBlock .addressline {
-    display: block; }
+    display: block;
+    font-size: 1.4em;
+    line-height: 1.2; }
 
 .twitterFeed {
   background: #dcf0ed;
-  padding: 1em;
-  margin-top: 1em; }
+  padding: 1em 2em;
+  margin-top: 1em;
+  font-size: 1.4em; }
+  .twitterFeed .twitterId {
+    font-family: 'Playfair Display', serif; }
 
 .hidden {
   display: none !important;

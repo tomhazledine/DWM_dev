@@ -70,6 +70,20 @@
         width:100%;
         margin-right:0;
     }
+    &.dualSidebar{
+        @include bp(d2){
+            width:100%;
+        }
+    }
+}
+
+.sidebarBlock{
+    @include bp(d2){
+        width:48%;
+        float:left;
+        &:nth-of-type(2n){float:right;}
+        &:nth-of-type(2n+1){clear:both;}
+    }
 }
 
 .columnedBlock{
