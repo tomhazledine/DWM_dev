@@ -50,16 +50,23 @@
     }
 }
 
+.contentFormWrapper{
+    @include bp(d2){clear:both;}
+}
+
 .contentWrapper.contact{
     position:relative;
     z-index:4;
 }
 
 .sidebarBlock{
-    padding:0 0 1em 0;
+    padding:0 0 4em 0;
+    a{font-size:1.4em;}
     h3{padding-bottom:1em;}
     .addressline{
         display:block;
+        font-size:1.4em;
+        line-height:1.2;
     }
 }
 
@@ -67,4 +74,12 @@
     background:$blueMid;
     padding:1em 2em;
     margin-top:1em;
+    font-size:1.4em;
+    .twitterId{
+        font-family:$display;
+        // font-weight:700;
+    }
+    .twittercontent{
+        // font-size:1.4em;
+    }
 }

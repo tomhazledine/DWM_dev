@@ -4,9 +4,9 @@ email: tom@digitalwebmedia.co.uk
 permalink: /:title
 description: > # this means to ignore newlines until "baseurl:"
   Testing typography and deployment solutions for the new Digital Web Media website.
-url: "http://dwm.dev/" # Local
-# url: "http://tomhazledine.github.io/DWM_dev/" # the base hostname & protocol for your site
-# baseurl: "/DWM_dev/" # the subpath of your site, e.g. /blog/
+# url: "http://dwm.dev/" # Local
+url: "http://tomhazledine.github.io/DWM_dev/" # the base hostname & protocol for your site
+baseurl: "/DWM_dev/" # the subpath of your site, e.g. /blog/
 twitter_username: jekyllrb
 github_username:  tomhazledine
 
@@ -48,3 +48,10 @@ twitter: "https://twitter.com/DigitalWebSW"
 facebook: "https://www.facebook.com/digitalwebmediasw"
 linkedin: "http://www.linkedin.com/company/digital-web-media"
 google: "https://plus.google.com/116804388365827001557"
+
+# Twitter API auth
+twitter:
+  consumer_key: VJt1K2cowkfJkt3X65iadpIzc
+  consumer_secret: j9DFqs7LuGibQ4ZyM5foEIcJxs16fL5LN2sx1vNUFRzbgvDblz
+  access_token: 2387342042-HFE5d9rhEUlnxAbadAfkDsD0TkyihxMsP5fLGr5
+  access_token_secret: o1MZcB78CXoTkeWcfwScmu28bGvyEH50aqUH40bkE8gRx
