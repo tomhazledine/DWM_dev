@@ -25,11 +25,16 @@
     width:100%;
 }
 
+.left{
+    clear:both;
+}
 .half{
     width:49%;
     float:left;
+    margin-right:1%;
     &.right{
         float:right;
+        margin-right:0;
     }
     @include bp(d2){
         width:100%;
@@ -41,13 +46,6 @@
     width:32%;
     margin-right:2%;
     float:left;
-    // &:nth-of-type(1){
-    //     background:$red;
-    //     clear:both;
-    // }
-    &.left{
-        clear:both;
-    }
     &.right{
         margin-right:0;
     }

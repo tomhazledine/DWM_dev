@@ -6,4 +6,10 @@ input,textarea{
     padding:1em;
     margin-bottom:1em;
     font-family:$text;
+    background:$blueLight;
+    color:$black;
+    &:focus{
+        outline:none;
+        box-shadow:inset $blue 0 0 0 .2em;
+    }
 }

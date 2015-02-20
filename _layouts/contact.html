@@ -2,58 +2,105 @@
 layout: default
 ---
 
-<section class="mapSettings">
-    <p class='propMapLat fallback'>50.2600</p>
-    <p class='propMapLng fallback'>-5.0510</p>
-    <p class="propMapLatOffset">0</p>
-    <p class="propMapLngOffset">0</p>
-    <p class="mapZoom">15</p>
-</section>
+<section class="contactMapWrapper">
 
-<div id="mapCanvas" class="mapCanvas">
+    <div class="mapSettings">
+        <p class='propMapLat fallback'>50.414</p>
+        <p class='propMapLng fallback'>-5.0787</p>
+        <p class="propMapLatOffset">.0018</p>
+        <p class="propMapLngOffset">0</p>
+        <p class="mapZoom">15</p>
+    </div>
+
+    <div class="mapWrapper">
+        <div id="mapCanvas" class="mapCanvas"></div>
+    </div>
+    
     <div class="contactIntroBlockInner">
         {% for post in site.categories["contactheader"] limit:1 %}
             <div class="contactMarker">
-                <span class="ornament hat"></span>
-                <div class="introTitle">{{ post.title }}</div>
-                <span class="ornament swirl"></span>
-                <h1 class="introHeadline">{{ post.subtitle }}</h1>
+                <div class="contactMarkerInner">
+                    <span class="ornament hat"></span>
+                    <div class="introTitle">{{ post.title }}</div>
+                    <span class="ornament swirl"></span>
+                    <h1 class="introHeadline">{{ post.subtitle }}</h1>
+                </div>
             </div>
         {% endfor %}
     </div>
-</div>
 
-<div class="contentWrapper">
-    <div class="contentWrapperInner">
+</section>
 
-        <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-        </header>
+<div class="contentWrapper contact">
+    <div class="contentWrapperInner clearfix">
 
-        <article class="post-content">
+        <article class="homeContentBlock half">
+            <h2>{{ page.title }}</h2>
+            <h3>{{ page.subtitle }}</h3>
+            <div class="columnedBlock">
+                {{ content }}
+            </div>
+        </article>
 
-            <p>Need a website? Get in touch and we'll talk you through what we can do for you. Leave a message through the form below and we'll get right back to you, or use the contact info at the bottom of this page. We'd love to hear from you!</p>
+        <article class="contentBlock half right">
+            <div class="contentImage" style="background-image:url('{{ site.url }}assets/images/workImages/{{ page.heroimg }}');">
+        </div>
+        </article>
 
-            <form action="http://formspree.io/tom@wearedwm.com" method="POST">
+        <div class="contentBlock quart left">
+            
+            <div class="sidebarBlock addressBox">
+                <h2>Visit Us</h2>
+                <h3>Funny Quip</h3>
+                {% for link in site.dwmAddress %}
+                    <span class="addressline">{{ link.addressLine }}</span>
+                {% endfor %}
+            </div>
+
+            <div class="sidebarBlock emailBox">
+                <h2>Email Us</h2>
+                <h3>Funny Quip</h3>
+                <a href="mailto:{{ site.dwmEmail }}">{{ site.dwmEmail }}</a>
+            </div>
+
+            <div class="sidebarBlock telBox">
+                <h2>Call Us</h2>
+                <h3>Funny Quip</h3>
+                <a href="tel:{{ site.dwmTelLink }}">{{ site.dwmTel }}</a>
+            </div>
+
+        </div>
+
+        <article class="contentBlock half">
+            <h2>Send us a message</h2>
+            <h3>Funny Quip</h3>
+
+            <form class="contactForm" action="http://formspree.io/tom@wearedwm.com" method="POST">
                 <input type="hidden" name="_next" value="{{ site.url }}/thanks/" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="text" name="name" placeholder="Your name">
                 <input type="email" name="_replyto" placeholder="Your email address">
                 <textarea name="body" rows="5" placeholder="Your message&hellip;"></textarea>
-                <button class="button">Submit</button>
+                <button class="button">Send your message</button>
             </form>
 
-            <!-- {{ content }} -->
-            
-            <h4><a href="mailto:{{ site.dwmEmail }}">{{ site.dwmEmail }}</a></h4>
-
-            <h4><a href="tel:{{ site.dwmTelLink }}">{{ site.dwmTel }}</a></h4>
-
-            <h4>
-            {% for link in site.dwmAddress %}
-                {{ link.text }}</br>
-            {% endfor %}
-            </h4>
-
         </article>
+
+        <div class="contentBlock quart right">
+            <h2>Twitter Feed</h2>
+            <h3>Funny Quip</h3>
+            <div class="sidebarBlock twitterFeed">
+                <ul>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                </ul>
+            </div>
+        </div>
 
     </div>
 </div>

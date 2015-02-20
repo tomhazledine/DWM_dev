@@ -1,0 +1,70 @@
+.contactMapWrapper{
+    width:100%;
+    margin-bottom:-4em;
+    position:relative;
+    // padding-bottom:40%;
+    height:40em;
+    .mapWrapper{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        z-index:1;
+        .mapCanvas{
+            padding-bottom:0;
+            height:40em;
+        }
+    }
+    .contactIntroBlockInner{
+        position:absolute;
+        z-index:2;
+        top:0;
+        width:100%;
+        text-align:center;
+        // background:$blue;
+    }
+}
+
+.contactMarker{
+    width:16em;
+    height:16em;
+    background:$blue;
+    border-radius:50% 50% 50% 0;
+
+    overflow:hidden;
+    margin:5em auto 0;
+
+    transform:rotate(-45deg);
+    transform-origin:50% 50%;
+}
+.contactMarkerInner{
+    width:100%;
+    height:100%;
+    text-align:center;
+    transform:rotate(45deg);
+    transform-origin:50% 50%;
+    padding-top:2em;
+    h1{
+        padding:0 .5em 0 .5em;
+        font-size:2em;
+    }
+}
+
+.contentWrapper.contact{
+    position:relative;
+    z-index:4;
+}
+
+.sidebarBlock{
+    padding:0 0 1em 0;
+    h3{padding-bottom:1em;}
+    .addressline{
+        display:block;
+    }
+}
+
+.twitterFeed{
+    background:$blueMid;
+    padding:1em 2em;
+    margin-top:1em;
+}
