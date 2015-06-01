@@ -33,7 +33,6 @@ layout: default
 
 <div class="contentWrapper contact">
     <div class="contentWrapperInner clearfix">
-
         <article class="homeContentBlock half">
             <h2>{{ page.title }}</h2>
             <h3>{{ page.subtitle }}</h3>
@@ -57,7 +56,7 @@ layout: default
                 {% endfor %}
             </div>
 
-            <div class="sidebarBlock emailBox">
+            <!-- <div class="sidebarBlock emailBox">
                 <h2>Email Us</h2>
                 <h3>Funny Quip</h3>
                 <a href="mailto:{{ site.dwmEmail }}">{{ site.dwmEmail }}</a>
@@ -67,7 +66,7 @@ layout: default
                 <h2>Call Us</h2>
                 <h3>Funny Quip</h3>
                 <a href="tel:{{ site.dwmTelLink }}">{{ site.dwmTel }}</a>
-            </div>
+            </div> -->
 
         </div>
 
@@ -85,6 +84,33 @@ layout: default
             </form>
 
         </article>
+
+        <div class="contentBlock dualSidebar quart right">
+            <div class="sidebarBlock emailBox">
+                <h2>Email Us</h2>
+                <h3>Funny Quip</h3>
+                <a href="mailto:{{ site.dwmEmail }}">{{ site.dwmEmail }}</a>
+            </div>
+
+            <div class="sidebarBlock telBox">
+                <h2>Call Us</h2>
+                <h3>Funny Quip</h3>
+                <a href="tel:{{ site.dwmTelLink }}">{{ site.dwmTel }}</a>
+            </div>
+            <!-- <h2>Twitter Feed</h2>
+            <h3>Funny Quip</h3>
+            <div class="sidebarBlock twitterFeed">
+                <ul>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                    <li><span class="twitterId">@Who</span>: <span class="twittercontent">Saying something</span></li>
+                </ul>
+            </div> -->
+        </div>
 
         <div class="contentBlock dualSidebar quart right">
             <h2>Twitter Feed</h2>
