@@ -11,8 +11,9 @@ featured: true
 relatedto: realfoodbox
 relatedslug: beachhouse
 
-heroimg: "beachhouse/beachhouse_full.jpg"
-clientlogo: "logos/beachhouse.jpg"
+heroimg: beachhouse/hero.jpg
+clientlogo: logos/beachhouse.jpg
+thumbnail: beachhouse/thumb.jpg
 
 hasquote: true
 quotecite: "Scott Fairhurst"

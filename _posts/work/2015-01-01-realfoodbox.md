@@ -11,8 +11,9 @@ featured: true
 relatedto: beachhouse
 relatedslug: realfoodbox
 
-heroimg: "realfoodbox/realfoodbox.jpg"
-clientlogo: "realfoodbox/realfoodbox@2.jpg"
+heroimg: realfoodbox/hero.jpg
+clientlogo: realfoodbox/logo.svg
+thumbnail: realfoodbox/thumb.jpg
 
 hasquote: true
 quotecite: "Errol Flynn"
