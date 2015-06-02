@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="homeIntroBlock">
+    <div class="homeIntroBlockInner">
+            <div class="homeOrnaments">
+                <span class="ornament hat"></span>
+                <div class="introTitle">{{ page.title }}</div>
+                <span class="ornament swirl"></span>
+            </div>
+            <h1 class="introHeadline">{{ page.subtitle }}</h1>
+    </div>
+</div>
+
+<div class="contentWrapper">
+    <div class="contentWrapperInner clearfix">
+
+        <article class="homeContentBlock half">
+            <h2>{{ page.introTitle }}</h2>
+            <h3>{{ page.introSubTitle }}</h3>
+            <div class="columnedBlock">
+                {{ content }}
+            </div>
+        </article>
+        
+        {% include featuredwork.html %}
+
+        {% include featuredworks.html %}
+
+        {% include featuredquotes.html %}
+
+    </div>
+</div>
