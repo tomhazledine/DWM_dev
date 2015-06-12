@@ -108,10 +108,20 @@
 }
 
 .quoteBlock{
+    background-image:linear-gradient(
+        to right,
+        $blueMid 49%,
+        $white 49%);
+    &:hover{
+        background-image:linear-gradient(
+            to right,
+            $blue 49%,
+            $white 49%);
+    }
     a{
         // display:block;
-        .contentCaption{background:$blue;}
-        &:hover .contentCaption{background:$blueMid;}
+        // .contentCaption{background:$blue;}
+        // &:hover .contentCaption{background:$blueMid;}
     }
     .contentImage{
         width:49%;
@@ -173,7 +183,7 @@
     .contentCaption{
         width:49%;
         float:left;
-        min-height:40em;
+        // min-height:40em;
         background:none;
         padding:1em 2em;
         padding-right:2em;

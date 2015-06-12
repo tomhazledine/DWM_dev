@@ -12,7 +12,7 @@ relatedto: beachhouse
 relatedslug: realfoodbox
 
 heroimg: realfoodbox/hero.jpg
-clientlogo: realfoodbox/logo.svg
+clientlogo: realfoodbox/logo.png
 thumbnail: realfoodbox/thumb.jpg
 
 hasquote: true

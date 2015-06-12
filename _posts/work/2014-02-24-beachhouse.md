@@ -12,7 +12,7 @@ relatedto: realfoodbox
 relatedslug: beachhouse
 
 heroimg: beachhouse/hero.jpg
-clientlogo: logos/beachhouse.jpg
+clientlogo: beachhouse/logo.png
 thumbnail: beachhouse/thumb.jpg
 
 hasquote: true

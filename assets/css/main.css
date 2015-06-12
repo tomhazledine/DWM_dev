@@ -537,88 +537,91 @@ input, textarea {
     width: 2em;
     height: 2em; }
 
-.quoteBlock a .contentCaption {
-  background: #bce3e0; }
-.quoteBlock a:hover .contentCaption {
-  background: #dcf0ed; }
-.quoteBlock .contentImage {
-  width: 49%;
-  padding-bottom: 0;
-  min-height: 25em;
-  float: right;
-  margin-bottom: 0;
-  background: none; }
-  .quoteBlock .contentImage .contentImageSmall {
-    display: block;
-    width: 100%;
-    padding-bottom: 100%;
-    margin-bottom: 1em;
-    background-image: url('../images/placeholder2.jpg');
-    overflow: hidden; }
-    .quoteBlock .contentImage .contentImageSmall.one {
-      margin-bottom: 1em; }
-    .quoteBlock .contentImage .contentImageSmall.two {
-      margin-bottom: 0; }
-    .quoteBlock .contentImage .contentImageSmall.triangle {
-      position: relative;
-      z-index: 1; }
-      .quoteBlock .contentImage .contentImageSmall.triangle:after, .quoteBlock .contentImage .contentImageSmall.triangle:before {
-        position: absolute;
-        top: 0;
-        bottom: -20%;
-        display: block;
-        content: "";
-        background: #f9fdfc; }
-      .quoteBlock .contentImage .contentImageSmall.triangle:after {
-        left: 0;
-        right: 50%;
-        -webkit-transform: rotate(26.5deg);
-            -ms-transform: rotate(26.5deg);
-                transform: rotate(26.5deg);
-        -webkit-transform-origin: right top;
-            -ms-transform-origin: right top;
-                transform-origin: right top; }
-      .quoteBlock .contentImage .contentImageSmall.triangle:before {
-        left: 50%;
-        right: 0;
-        -webkit-transform: rotate(-26.5deg);
-            -ms-transform: rotate(-26.5deg);
-                transform: rotate(-26.5deg);
-        -webkit-transform-origin: left top;
-            -ms-transform-origin: left top;
-                transform-origin: left top; }
-    .quoteBlock .contentImage .contentImageSmall.circle {
-      border-radius: 50%;
-      overflow: hidden;
-      background-image: url('../images/placeholder3.jpg'); }
-  @media (max-width: 750px) {
-    .quoteBlock .contentImage {
-      display: none; } }
-.quoteBlock .contentCaption {
-  width: 49%;
-  float: left;
-  min-height: 40em;
-  background: none;
-  padding: 1em 2em;
-  padding-right: 2em;
-  padding-bottom: 5em;
-  position: relative; }
-  .quoteBlock .contentCaption:after {
-    display: none; }
-  .quoteBlock .contentCaption h3 {
-    color: #000000; }
-  @media (max-width: 750px) {
-    .quoteBlock .contentCaption {
+.quoteBlock {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(49%, #dcf0ed), color-stop(49%, #f9fdfc));
+  background-image: -webkit-linear-gradient(left, #dcf0ed 49%, #f9fdfc 49%);
+  background-image: linear-gradient(to right, #dcf0ed 49%, #f9fdfc 49%); }
+  .quoteBlock:hover {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(49%, #bce3e0), color-stop(49%, #f9fdfc));
+    background-image: -webkit-linear-gradient(left, #bce3e0 49%, #f9fdfc 49%);
+    background-image: linear-gradient(to right, #bce3e0 49%, #f9fdfc 49%); }
+  .quoteBlock .contentImage {
+    width: 49%;
+    padding-bottom: 0;
+    min-height: 25em;
+    float: right;
+    margin-bottom: 0;
+    background: none; }
+    .quoteBlock .contentImage .contentImageSmall {
+      display: block;
       width: 100%;
-      min-height: 0;
-      padding: 1em 1em 5em 1em; } }
-.quoteBlock .clientLogo {
-  width: 100%;
-  padding-bottom: 3em;
-  position: absolute;
-  bottom: 1em;
-  left: 0em;
-  background-size: contain; }
+      padding-bottom: 100%;
+      margin-bottom: 1em;
+      background-image: url('../images/placeholder2.jpg');
+      overflow: hidden; }
+      .quoteBlock .contentImage .contentImageSmall.one {
+        margin-bottom: 1em; }
+      .quoteBlock .contentImage .contentImageSmall.two {
+        margin-bottom: 0; }
+      .quoteBlock .contentImage .contentImageSmall.triangle {
+        position: relative;
+        z-index: 1; }
+        .quoteBlock .contentImage .contentImageSmall.triangle:after, .quoteBlock .contentImage .contentImageSmall.triangle:before {
+          position: absolute;
+          top: 0;
+          bottom: -20%;
+          display: block;
+          content: "";
+          background: #f9fdfc; }
+        .quoteBlock .contentImage .contentImageSmall.triangle:after {
+          left: 0;
+          right: 50%;
+          -webkit-transform: rotate(26.5deg);
+              -ms-transform: rotate(26.5deg);
+                  transform: rotate(26.5deg);
+          -webkit-transform-origin: right top;
+              -ms-transform-origin: right top;
+                  transform-origin: right top; }
+        .quoteBlock .contentImage .contentImageSmall.triangle:before {
+          left: 50%;
+          right: 0;
+          -webkit-transform: rotate(-26.5deg);
+              -ms-transform: rotate(-26.5deg);
+                  transform: rotate(-26.5deg);
+          -webkit-transform-origin: left top;
+              -ms-transform-origin: left top;
+                  transform-origin: left top; }
+      .quoteBlock .contentImage .contentImageSmall.circle {
+        border-radius: 50%;
+        overflow: hidden;
+        background-image: url('../images/placeholder3.jpg'); }
+    @media (max-width: 750px) {
+      .quoteBlock .contentImage {
+        display: none; } }
+  .quoteBlock .contentCaption {
+    width: 49%;
+    float: left;
+    background: none;
+    padding: 1em 2em;
+    padding-right: 2em;
+    padding-bottom: 5em;
+    position: relative; }
+    .quoteBlock .contentCaption:after {
+      display: none; }
+    .quoteBlock .contentCaption h3 {
+      color: #000000; }
+    @media (max-width: 750px) {
+      .quoteBlock .contentCaption {
+        width: 100%;
+        min-height: 0;
+        padding: 1em 1em 5em 1em; } }
+  .quoteBlock .clientLogo {
+    width: 100%;
+    padding-bottom: 3em;
+    position: absolute;
+    bottom: 1em;
+    left: 0em;
+    background-size: contain; }
 
 .mapSettings {
   display: none; }
