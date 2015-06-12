@@ -34,14 +34,14 @@ navigation:
 
 # Content settings
 dwmEmail: hello@wearedwm.com
-dwmTel: "01637 818271"
-dwmTelLink: "01637818271"
+dwmTel: 01637 818271
+dwmTelLink: 01637818271
 dwmAddress:
-  - addressLine: "DWM"
-  - addressLine: "Victoria Parade Buildings"
-  - addressLine: "East Street"
-  - addressLine: "Newquay"
-  - addressLine: "TR7 1BG"
+  - addressLine: DWM
+  - addressLine: Victoria Parade Buildings
+  - addressLine: East Street
+  - addressLine: Newquay
+  - addressLine: TR7 1BG
 
 # Social Links
 socialLinks:
@@ -59,8 +59,8 @@ socialLinks:
     name: Google+
 
 # Twitter API auth
-twitter:
-  consumer_key: VJt1K2cowkfJkt3X65iadpIzc
-  consumer_secret: j9DFqs7LuGibQ4ZyM5foEIcJxs16fL5LN2sx1vNUFRzbgvDblz
-  access_token: 2387342042-HFE5d9rhEUlnxAbadAfkDsD0TkyihxMsP5fLGr5
-  access_token_secret: o1MZcB78CXoTkeWcfwScmu28bGvyEH50aqUH40bkE8gRx
+# twitter:
+#   consumer_key: VJt1K2cowkfJkt3X65iadpIzc
+#   consumer_secret: j9DFqs7LuGibQ4ZyM5foEIcJxs16fL5LN2sx1vNUFRzbgvDblz
+#   access_token: 2387342042-HFE5d9rhEUlnxAbadAfkDsD0TkyihxMsP5fLGr5
+#   access_token_secret: o1MZcB78CXoTkeWcfwScmu28bGvyEH50aqUH40bkE8gRx
