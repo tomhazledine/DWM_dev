@@ -420,21 +420,13 @@ input, textarea {
   display: block;
   width: 8em;
   height: 1.5em;
-  margin: 0 auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
+  margin: 0 auto; }
 
-.ornament.hat {
-  background-image: url('../images/dwmHat_black.png');
-  background-image: url('../images/dwmHat_black.svg'); }
-
-.ornament.swirl {
-  background-image: url('../images/swirl.png');
-  background-image: url('../images/swirl.svg');
-  height: 1em;
-  position: relative; }
-  .ornament.swirl:before, .ornament.swirl:after {
+.swirlWrapper {
+  width: 8em;
+  position: relative;
+  margin: 0 auto; }
+  .swirlWrapper:before, .swirlWrapper:after {
     display: block;
     content: "";
     background: #000000;
@@ -443,8 +435,12 @@ input, textarea {
     width: 1.8em;
     top: 50%;
     margin-top: -1px; }
-  .ornament.swirl:after {
+  .swirlWrapper:after {
     right: 0; }
+
+.ornament.swirl {
+  fill: #000000;
+  height: 1em; }
 
 .contentBlock {
   margin-bottom: 1em; }

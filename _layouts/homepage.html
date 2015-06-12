@@ -5,9 +5,15 @@ layout: default
 <div class="homeIntroBlock">
     <div class="homeIntroBlockInner">
             <div class="homeOrnaments">
-                <span class="ornament hat"></span>
+                <svg class="ornament hat">
+                    <use xlink:href="#dwmHat"/>
+                </svg>
                 <div class="introTitle">{{ page.title }}</div>
-                <span class="ornament swirl"></span>
+                <div class="swirlWrapper">
+                    <svg class="ornament swirl">
+                        <use xlink:href="#swirl"/>
+                    </svg>
+                </div>
             </div>
             <h1 class="introHeadline">{{ page.subtitle }}</h1>
     </div>

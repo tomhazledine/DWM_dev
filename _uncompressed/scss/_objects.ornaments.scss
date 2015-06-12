@@ -4,21 +4,20 @@
     height:1.5em;
     // background:$yellow;
     margin:0 auto;
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
+    // background-size:contain;
+    // background-repeat:no-repeat;
+    // background-position:center;
 }
 
 .ornament.hat{
-    background-image:url('../images/dwmHat_black.png');
-    background-image:url('../images/dwmHat_black.svg');
+    // background-image:url('../images/dwmHat_black.png');
+    // background-image:url('../images/dwmHat_black.svg');
 }
 
-.ornament.swirl{
-    background-image:url('../images/swirl.png');
-    background-image:url('../images/swirl.svg');
-    height:1em;
+.swirlWrapper{
+    width:8em;
     position:relative;
+    margin:0 auto;
     &:before,&:after{
         display:block;
         content:"";
@@ -30,4 +29,24 @@
         margin-top:-1px;
     }
     &:after{right:0;}
+}
+
+.ornament.swirl{
+    // background:$highlight;
+    fill:$black;
+    // background-image:url('../images/swirl.png');
+    // background-image:url('../images/swirl.svg');
+    height:1em;
+    // position:relative;
+    // &:before,&:after{
+    //     display:block;
+    //     content:"";
+    //     background:$black;
+    //     position:absolute;
+    //     height:2px;
+    //     width:1.8em;
+    //     top:50%;
+    //     margin-top:-1px;
+    // }
+    // &:after{right:0;}
 }
