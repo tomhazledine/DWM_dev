@@ -1,15 +1,15 @@
 ---
 layout: homepage
-title: For your eyes only
+title: We are DWM
 date: 2015-01-22
 categories: homeheader
-subtitle: Hello. We are DWM. What can we do for you? Let's see what this text block looks like when it runs over multiple lines...
+subtitle: Website design & Development
 
-introTitle: Introduction
-introSubTitle: Sub-heading
+introTitle: What we stand for
+introSubTitle: The DWM Manifesto
 ---
 
-This is some regular body copy. Most of the text on the site will look like this. It will often contain text **that is bold**, as well as [plenty of links]() and stuff that is *emphasised*.
+**DWM** work with businesses to ensure the internet is an asset to their company. Design is about more than just the visuals, and technology is about more than just adding complexity. We see designing for the web as a kind of architecture; it defines how your customers move through your space, and how they feel as they do it. We see technology as an opportunity to make things *simpler*, not more complicated.
 
-There will also be plenty of paragraphs. Talking of which, here's a second paragraph. Isn't it lovely! This one will have a block of numbers: 0123456789. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, id, adipisci! Aliquam, consectetur, esse?
+At **DWM** we combine bespoke interaction design with cutting edge technological development. We make beautifull, seamless experiences for your customers and staff.
 
