@@ -44,10 +44,19 @@ dwmAddress:
   - addressLine: "TR7 1BG"
 
 # Social Links
-twitter: "https://twitter.com/DigitalWebSW"
-facebook: "https://www.facebook.com/digitalwebmediasw"
-linkedin: "http://www.linkedin.com/company/digital-web-media"
-google: "https://plus.google.com/116804388365827001557"
+socialLinks:
+  - url: https://twitter.com/DigitalWebSW
+    icon: twitter
+    name: Twitter
+  - url: https://www.facebook.com/digitalwebmediasw
+    icon: facebook
+    name: Facebook
+  - url: http://www.linkedin.com/company/digital-web-media
+    icon: linkedIn
+    name: LinkedIn
+  - url: https://plus.google.com/116804388365827001557
+    icon: googlePlus
+    name: Google+
 
 # Twitter API auth
 twitter:

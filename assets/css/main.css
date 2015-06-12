@@ -379,18 +379,14 @@ input, textarea {
     cursor: pointer;
     padding-top: 0.5em;
     border-bottom: 0.2em solid #000000; }
+    .socialLink a .icon {
+      width: 1em;
+      height: 1em;
+      fill: #000000; }
     .socialLink a:hover {
       border-bottom-color: #bce3e0; }
-    .socialLink a:before {
-      font-family: 'iconFont'; }
-    .socialLink a.twitter:before {
-      content: "\e004"; }
-    .socialLink a.facebook:before {
-      content: "\e001"; }
-    .socialLink a.linkedIn:before {
-      content: "\e003"; }
-    .socialLink a.googlePlus:before {
-      content: "\e002"; }
+      .socialLink a:hover .icon {
+        fill: #bce3e0; }
 
 .homeIntroBlock {
   background: #e5f4f2; }
@@ -655,7 +651,7 @@ input, textarea {
 
 .headerSocialLinks {
   display: block;
-  width: 8em;
+  width: 10em;
   float: left;
   position: relative;
   z-index: 2; }

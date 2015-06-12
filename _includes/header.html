@@ -1,40 +1,46 @@
 {% include head.html %}
 
 <header class="siteHeader">
-	<div class="siteHeaderInner clearfix">
+    <div class="siteHeaderInner clearfix">
 
-		<ul class="headerSocialLinks socialLinks clearfix">
-			<li class="socialLink"><a class="facebook"><span class="visuallyhidden">Facebook</span></a></li>
-			<li class="socialLink"><a class="twitter"><span class="visuallyhidden">Twitter</span></a></li>
-			<li class="socialLink"><a class="googlePlus"><span class="visuallyhidden">Google Plus</span></a></li>
-			<li class="socialLink"><a class="linkedIn"><span class="visuallyhidden">Linked In</span></a></li>
-		</ul>
+        <ul class="headerSocialLinks socialLinks clearfix">
+            {% for socialLink in site.socialLinks %}
+                <li class="socialLink">
+                    <a href="{{ socialLink.url }}" class="{{ socialLink.icon }}">
+                        <span class="visuallyhidden">{{ socialLink.name }}</span>
+                        <svg class="icon {{ socialLink.icon }}">
+                            <use xlink:href="#{{ socialLink.icon }}"/>
+                        </svg>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
 
-		<ul class="headerNav clearfix">
-			{% assign url = page.url|remove:'index.html' %}
-			{% for link in site.navigation %}
-				{% capture linkURL %}/{{ link.url }}{% endcapture %}
-				<li {% if url == linkURL %}class="current"{% endif %}>
-				  <a href="{{ site.url }}{{ link.url }}">{{ link.text }}</a>
-				</li>
-			{% endfor %}
-		</ul>
+        <ul class="headerNav clearfix">
+            {% assign url = page.url|remove:'index.html' %}
+            {% for link in site.navigation %}
+                {% capture linkURL %}/{{ link.url }}{% endcapture %}
+                <li {% if url == linkURL %}class="current"{% endif %}>
+                  <a href="{{ site.url }}{{ link.url }}">{{ link.text }}</a>
+                </li>
+            {% endfor %}
+        </ul>
 
-		<a class="navLogo">
-			<span>{{ site.title }}</span>
-		</a>
+        <a class="navLogo">
+            <span>{{ site.title }}</span>
+        </a>
 
-		<button class="mobileNavToggle"><span class="navicon"></span><span class="visuallyhidden">Menu</span></button>
+        <button class="mobileNavToggle"><span class="navicon"></span><span class="visuallyhidden">Menu</span></button>
 
-	</div>
+    </div>
 
-	<ul class="mobileNav clearfix">
-			{% assign url = page.url|remove:'index.html' %}
-			{% for link in site.navigation %}
-				{% capture linkURL %}/{{ link.url }}{% endcapture %}
-				<li {% if url == linkURL %}class="current"{% endif %}>
-				  <a href="{{ site.url }}{{ link.url }}">{{ link.text }}</a>
-				</li>
-			{% endfor %}
-		</ul>
+    <ul class="mobileNav clearfix">
+        {% assign url = page.url|remove:'index.html' %}
+        {% for link in site.navigation %}
+            {% capture linkURL %}/{{ link.url }}{% endcapture %}
+            <li {% if url == linkURL %}class="current"{% endif %}>
+              <a href="{{ site.url }}{{ link.url }}">{{ link.text }}</a>
+            </li>
+        {% endfor %}
+    </ul>
 </header>
