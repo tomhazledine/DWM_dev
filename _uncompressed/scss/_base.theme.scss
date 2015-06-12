@@ -62,24 +62,38 @@ strong{font-weight:900;}
 blockquote{
   padding-bottom:2em;
   position:relative;
+  text-indent:2em;
+  padding-top:1em;
   &:before,&:after{
     font-family:$display;
     font-style:italic;
-    line-height:1rem;
-    font-size:3em;
-    position:relative;
-  }
-  &:before{
-    content:"“";
-    padding-right:.5em;
-    top:.5em;
+    line-height:1;
   }
   &:after{
-    content:"”";
     position:absolute;
-    bottom:0;
-    right:0;
+    display:block;
+    line-height:1;
+    width:1em;
+    height:1em;
+    font-size:3em;
+    content:"“";
+    font-family:$display;
+    font-style:italic;
+    // padding-right:.5em;
+    top:0.2em;
+    left:-.1em;
+    text-indent:0;
+
   }
+  // &:before{
+  //   content:"”";
+  //   color:rgba($black,.1);
+  //   font-size:18em;
+  //   line-height:1rem;
+  //   position:absolute;
+  //   bottom:0;
+  //   right:0;
+  // }
 }
 
 .button{

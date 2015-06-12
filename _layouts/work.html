@@ -38,10 +38,17 @@ layout: default
                 ">
                     <a href="{{ site.url }}{{ post.url }}">
                         <div class="contentImage" style="background-image:url('{{ site.url }}assets/images/workImages/{{ post.heroimg }}');">
-                            <div class="contentImageMask"></div>
+                            <div class="contentImageMask">
+                                <svg class="icon">
+                                    <use xlink:href="#dwmEye"/>
+                                </svg>
+                            </div>
                         </div>
 
                         <div class="contentCaption">
+                            <svg class="icon">
+                                <use xlink:href="#dwmEye"/>
+                            </svg>
                             <h2>{{ post.client }}</h2>
                             <h3>{{ post.subheading }}</h3>
                             <p>{{ post.minidescription }}</p>
