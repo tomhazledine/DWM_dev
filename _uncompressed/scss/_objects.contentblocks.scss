@@ -54,8 +54,8 @@
     height:100%;
     background:$dropDown;
     opacity:0;
-    transition:opacity;
-    transition-duration:.3s;
+    // transition:opacity;
+    // transition-duration:.3s;
     z-index:4;
     .icon{
         display:block;

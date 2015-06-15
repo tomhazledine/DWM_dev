@@ -500,10 +500,6 @@ input, textarea {
   height: 100%;
   background: rgba(188, 227, 224, 0.8);
   opacity: 0;
-  -webkit-transition: opacity;
-          transition: opacity;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
   z-index: 4; }
   .contentImageMask .icon {
     display: block;
