@@ -22,7 +22,7 @@ hasCaseStudy: true
 caseStudyTitle: Friendly E-Commerce
 caseStudySubHeading: A web-shop that captures the client's personality.
 
-caseStudyBody: For the Anna Victoria website, we knew a faceless off-the-shelf e-commerce solution would have been completely inappropriate. The digital store-front needed to reflect the charming boutique nature of Anna's creations. 
+caseStudyBody: For the Anna Victoria website, we knew a faceless off-the-shelf e-commerce solution would have been completely inappropriate. The digital store-front needed to reflect the charming boutique nature of Anna's creations.
 
 caseStudyBullets:
 - content: Wordpress Blogging Platform
@@ -35,3 +35,5 @@ caseStudyBullets:
 Founded in 2010 and born out of a passion for great design, Anna’s unique style is very much an eclectic mix of quirky hand drawn patterns, collage fabrics and delightful colour combinations.
 
 Anna’s cards, featuring her trademark use of stunning patterns and delicate line drawings, are sold in many high end independent shops across the UK.  Her licensed work can now also be seen in prestigious outlets such as John Lewis, Paperchase and Marks & Spencer.
+
+Today from her busy creek-side studio in a picturesque fishing village near Truro, Anna produces a range of wonderfully characterful designs. Her eclectic design-led artwork is ultimately inspired by her beautiful Cornish home as featured in House Beautiful Magazine.
