@@ -5,7 +5,7 @@ permalink: /work/
 group: "navigation"
 ---
 
-## Our work examples will go here
+## These are some of our recent projects
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni consequuntur eveniet consequatur sequi, ab in. Accusamus praesentium quisquam dignissimos ipsam dolorem eligendi, tempore dolor, suscipit quasi, provident sunt culpa autem.
+We work with a wide range of clients in all sectors. From leisure & tourism to manufacturing, from professional services to public sector & NPO. What all our clients have in common is an understanding that "digital" is a key part of any modern business.
 

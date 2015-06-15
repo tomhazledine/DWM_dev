@@ -17,16 +17,14 @@ layout: default
     </div>
     
     <div class="contactIntroBlockInner">
-        {% for post in site.categories["contactheader"] limit:1 %}
-            <div class="contactMarker">
-                <div class="contactMarkerInner">
-                    <span class="ornament hat"></span>
-                    <div class="introTitle">{{ post.title }}</div>
-                    <span class="ornament swirl"></span>
-                    <h1 class="introHeadline">{{ post.subtitle }}</h1>
-                </div>
+        <div class="contactMarker">
+            <div class="contactMarkerInner">
+                <span class="ornament hat"></span>
+                <div class="introTitle">{{ page.introTitle }}</div>
+                <span class="ornament swirl"></span>
+                <h1 class="introHeadline">{{ page.introSubtitle }}</h1>
             </div>
-        {% endfor %}
+        </div>
     </div>
 
 </section>
@@ -42,7 +40,7 @@ layout: default
         </article>
 
         <article class="contentBlock half right">
-            <div class="contentImage" style="background-image:url('{{ site.url }}assets/images/workImages/{{ page.heroimg }}');">
+            <div class="contentImage" style="background-image:url('{{ site.url }}assets/images/contact/{{ page.heroimg }}');">
         </div>
         </article>
 
@@ -50,7 +48,7 @@ layout: default
             
             <div class="sidebarBlock addressBox">
                 <h2>Visit Us</h2>
-                <h3>Funny Quip</h3>
+                <!-- <h3>Funny Quip</h3> -->
                 {% for link in site.dwmAddress %}
                     <span class="addressline">{{ link.addressLine }}</span>
                 {% endfor %}
@@ -72,7 +70,7 @@ layout: default
 
         <article class="contentBlock contentFormWrapper half">
             <h2>Send us a message</h2>
-            <h3>Funny Quip</h3>
+            <!-- <h3>Funny Quip</h3> -->
 
             <form class="contactForm" action="http://formspree.io/tom@wearedwm.com" method="POST">
                 <input type="hidden" name="_next" value="{{ site.url }}/thanks/" />
@@ -88,13 +86,13 @@ layout: default
         <div class="contentBlock dualSidebar quart right">
             <div class="sidebarBlock emailBox">
                 <h2>Email Us</h2>
-                <h3>Funny Quip</h3>
+                <!-- <h3>Funny Quip</h3> -->
                 <a href="mailto:{{ site.dwmEmail }}">{{ site.dwmEmail }}</a>
             </div>
 
             <div class="sidebarBlock telBox">
                 <h2>Call Us</h2>
-                <h3>Funny Quip</h3>
+                <!-- <h3>Funny Quip</h3> -->
                 <a href="tel:{{ site.dwmTelLink }}">{{ site.dwmTel }}</a>
             </div>
             <!-- <h2>Twitter Feed</h2>
