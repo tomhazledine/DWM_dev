@@ -540,11 +540,27 @@ input, textarea {
 .quoteBlock {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(49%, #dcf0ed), color-stop(49%, #f9fdfc));
   background-image: -webkit-linear-gradient(left, #dcf0ed 49%, #f9fdfc 49%);
-  background-image: linear-gradient(to right, #dcf0ed 49%, #f9fdfc 49%); }
+  background-image: linear-gradient(to right, #dcf0ed 49%, #f9fdfc 49%);
+  -webkit-transition: background-image;
+          transition: background-image;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  position: relative; }
+  @media (max-width: 960px) {
+    .quoteBlock {
+      background-image: none; } }
   .quoteBlock:hover {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(49%, #bce3e0), color-stop(49%, #f9fdfc));
     background-image: -webkit-linear-gradient(left, #bce3e0 49%, #f9fdfc 49%);
     background-image: linear-gradient(to right, #bce3e0 49%, #f9fdfc 49%); }
+    @media (max-width: 960px) {
+      .quoteBlock:hover {
+        background-image: none; } }
+  @media (max-width: 960px) {
+    .quoteBlock a .contentCaption {
+      background: #bce3e0; }
+    .quoteBlock a:hover .contentCaption {
+      background: #dcf0ed; } }
   .quoteBlock .contentImage {
     width: 49%;
     padding-bottom: 0;
@@ -605,7 +621,7 @@ input, textarea {
     padding: 1em 2em;
     padding-right: 2em;
     padding-bottom: 5em;
-    position: relative; }
+    position: static; }
     .quoteBlock .contentCaption:after {
       display: none; }
     .quoteBlock .contentCaption h3 {
@@ -616,12 +632,15 @@ input, textarea {
         min-height: 0;
         padding: 1em 1em 5em 1em; } }
   .quoteBlock .clientLogo {
-    width: 100%;
-    padding-bottom: 3em;
+    width: 50%;
+    padding-bottom: 4em;
     position: absolute;
-    bottom: 1em;
+    bottom: 2em;
     left: 0em;
     background-size: contain; }
+    @media (max-width: 960px) {
+      .quoteBlock .clientLogo {
+        width: 100%; } }
 
 .mapSettings {
   display: none; }

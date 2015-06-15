@@ -112,16 +112,27 @@
         to right,
         $blueMid 49%,
         $white 49%);
+    transition:background-image;
+    transition-duration:.2s;
+    position:relative;
+    @include bp(d1){
+        background-image:none;
+    }
     &:hover{
         background-image:linear-gradient(
             to right,
             $blue 49%,
             $white 49%);
+        @include bp(d1){
+            background-image:none;
+        }
     }
     a{
         // display:block;
-        // .contentCaption{background:$blue;}
-        // &:hover .contentCaption{background:$blueMid;}
+        @include bp(d1){
+            .contentCaption{background:$blue;}
+            &:hover .contentCaption{background:$blueMid;}
+        }
     }
     .contentImage{
         width:49%;
@@ -188,7 +199,7 @@
         padding:1em 2em;
         padding-right:2em;
         padding-bottom:5em;
-        position:relative;
+        position:static;
         &:after{display:none;}
         h3{color:$black;}
         @include bp(d2){
@@ -198,13 +209,16 @@
         }
     }
     .clientLogo{
-        width:100%;
-        padding-bottom:3em;
+        width:50%;
+        padding-bottom:4em;
         // background:$yellow;
         position:absolute;
-        bottom:1em;
+        bottom:2em;
         left:0em;
         @extend %imgBg;
         background-size:contain;
+        @include bp(d1){
+            width:100%;
+        }
     }
 }
