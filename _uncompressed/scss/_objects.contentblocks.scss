@@ -130,8 +130,8 @@
     a{
         // display:block;
         @include bp(d1){
-            .contentCaption{background:$blue;}
-            &:hover .contentCaption{background:$blueMid;}
+            .contentCaption{background:$blueMid;}
+            &:hover .contentCaption{background:$blue;}
         }
     }
     .contentImage{

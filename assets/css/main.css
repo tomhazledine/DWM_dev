@@ -299,6 +299,10 @@ input, textarea {
      -moz-column-width: 10em;
           column-width: 10em; }
 
+.caseStudyBullets li {
+  list-style: disc;
+  margin-left: 1em; }
+
 .mobileNavToggle {
   outline: none;
   width: 1.8em;
@@ -558,9 +562,9 @@ input, textarea {
         background-image: none; } }
   @media (max-width: 960px) {
     .quoteBlock a .contentCaption {
-      background: #bce3e0; }
+      background: #dcf0ed; }
     .quoteBlock a:hover .contentCaption {
-      background: #dcf0ed; } }
+      background: #bce3e0; } }
   .quoteBlock .contentImage {
     width: 49%;
     padding-bottom: 0;

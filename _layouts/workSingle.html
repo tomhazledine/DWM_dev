@@ -23,6 +23,15 @@ layout: default
                     <div class="columnedBlock">
                         {{ page.caseStudyBody }}
                     </div>
+                    {% if page.caseStudyBullets %}
+                        <div class="caseStudyBulletsWrapper">
+                            <ul class="caseStudyBullets">
+                                {% for bullet in page.caseStudyBullets %}
+                                    <li>{{ bullet.content }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
                 </article>
             {% endif %}
 
